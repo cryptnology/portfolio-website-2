@@ -8,13 +8,13 @@ interface Props extends BaseComponentProps {}
 
 const MotionLink = motion(Link);
 
-const Logo = ({ className }: Props) => {
+const Logo = ({ className, href }: Props) => {
   return (
     <div className={className}>
       <div className="flex items-center justify-center">
         <MotionLink
-          className="w-16 h-16 text-light bg-dark flex items-center justify-center rounded-full text-2xl font-bold"
-          href="/"
+          className="w-16 h-16 mt-2 text-light bg-dark flex items-center justify-center rounded-full text-2xl font-bold"
+          href={href as string}
           whileHover={{
             backgroundColor: [
               '#121212',

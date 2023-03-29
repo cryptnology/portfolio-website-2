@@ -4,13 +4,13 @@ import { CustomLink, Logo, MotionLink } from '.';
 
 const NavBar = () => {
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
+    <header className="w-full py-8 font-medium flex items-center justify-between">
       <nav>
         <CustomLink href="/" title="Home" />
         <CustomLink className="mx-8" href="/about" title="About" />
         <CustomLink href="/projects" title="Projects" />
       </nav>
-      <Logo className="absolute left-[50%] top-2 translate-x-[-50%]" />
+      <Logo className="absolute left-[50%] top-2 translate-x-[-50%]" href="/" />
       <nav className="flex items-center justify-center">
         <MotionLink href="https://twitter.com/CryptnologyDev">
           <Twitter />
