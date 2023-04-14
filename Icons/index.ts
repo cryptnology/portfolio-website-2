@@ -1,3 +1,4 @@
+export { default as CircularText } from './CircularText';
 export { default as GitHub } from './GitHub';
 export { default as LinkArrow } from './LinkArrow';
 export { default as LinkedIn } from './LinkedIn';

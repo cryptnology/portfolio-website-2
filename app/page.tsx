@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { developer } from '@/public/images';
-import { AnimatedText, CustomLink } from '@/components';
+import { developer, lightBulb } from '@/public/images';
+import { AnimatedText, Container, CustomLink, HireMe } from '@/components';
 import { LinkArrow } from '@/Icons';
 
 export default function Home() {
   return (
     <main className="flex items-center text-dark w-full">
-      <div className="flex justify-between items-center w-full pt-0">
+      <Container className="flex justify-between items-center w-full pt-0">
         <div className="w-1/2">
           <Image className="w-full h-auto" src={developer} alt="Cryptnology" />
         </div>
@@ -40,6 +40,10 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </Container>
+      <HireMe />
+      <div className="absolute right-8 bottom-8 inline-block w-24">
+        <Image src={lightBulb} alt="Cryptnology" className="w-full h-auto" />
       </div>
     </main>
   );
