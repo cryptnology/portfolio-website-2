@@ -17,9 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${montserrat.className} bg-light`}>
-      <body className="flex min-h-screen flex-col px-32">
-        <NavBar />
-        {children}
+      <body className="flex min-h-screen flex-col">
+        <div className="px-32">
+          <NavBar />
+          {children}
+        </div>
         <Footer />
       </body>
     </html>
