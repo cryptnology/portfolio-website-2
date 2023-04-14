@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { CircularText } from '@/Icons';
-import { lightBulb } from '@/public/images';
 
 const HireMe = () => {
   return (

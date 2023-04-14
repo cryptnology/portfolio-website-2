@@ -1,4 +1,5 @@
 export { default as AnimatedText } from './AnimatedText';
+export { default as AnimatedNumber } from './AnimatedNumber';
 export { default as Container } from './Container';
 export { default as CustomLink } from './CustomLink';
 export { default as Footer } from './Footer';
