@@ -6,13 +6,18 @@ import { usePathname } from 'next/navigation';
 
 interface Props extends BaseComponentProps {
   title: string;
+  target?: string;
 }
 
-const CustomLink = ({ href, title, className }: Props) => {
+const CustomLink = ({ href, title, className, target }: Props) => {
   const pathname = usePathname();
 
   return (
-    <Link className={`${className} relative group`} href={href as string}>
+    <Link
+      className={`${className} relative group`}
+      href={href as string}
+      target={target}
+    >
       {title}
       <div
         className={`h-[2px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${

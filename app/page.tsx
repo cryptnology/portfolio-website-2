@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { developer } from '@/public/images';
-import { AnimatedText } from '@/components';
+import { AnimatedText, CustomLink } from '@/components';
 import { LinkArrow } from '@/Icons';
 
 export default function Home() {
@@ -30,13 +30,12 @@ export default function Home() {
             >
               Resume <LinkArrow className="w-6 ml-1" />
             </Link>
-            <Link
-              className="ml-4 text-lg font-medium capitalize text-dark underline hover:no-underline"
+            <CustomLink
+              className="ml-4 text-lg font-medium capitalize text-dark"
               href="mailto:jamie@cryptnology.dev"
+              title="Contact"
               target="_blank"
-            >
-              Contact
-            </Link>
+            />
           </div>
         </div>
       </div>
