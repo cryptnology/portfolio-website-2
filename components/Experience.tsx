@@ -2,7 +2,7 @@
 
 import { useRef } from 'react';
 import { motion, useScroll } from 'framer-motion';
-import LiIcon from './LiIcon';
+import { LiIcon } from '.';
 
 interface DetailsProps {
   position: string;
@@ -61,7 +61,7 @@ const Experience = () => {
   });
 
   return (
-    <div className="my-64">
+    <div className="mb-40">
       <h2 className="font-bold text-8xl mb-32 w-full text-center">
         Experience
       </h2>

@@ -3,6 +3,7 @@ import {
   AnimatedNumber,
   AnimatedText,
   Container,
+  Education,
   Experience,
   Skills,
 } from '@/components';
@@ -80,6 +81,7 @@ const About = () => {
           </div>
         </div>
         <Skills />
+        <Education />
         <Experience />
       </main>
     </Container>
