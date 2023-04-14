@@ -1,6 +1,6 @@
-import { AnimatedNumber, AnimatedText, Container } from '@/components';
-import { profilePic } from '@/public/images';
 import Image from 'next/image';
+import { AnimatedNumber, AnimatedText, Container, Skills } from '@/components';
+import { profilePic } from '@/public/images';
 
 export const metadata = {
   title: 'Cryptnology | About',
@@ -73,6 +73,7 @@ const About = () => {
             </div>
           </div>
         </div>
+        <Skills />
       </main>
     </Container>
   );
