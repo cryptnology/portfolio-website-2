@@ -3,12 +3,14 @@
 import { motion } from 'framer-motion';
 import { BaseComponentProps } from '@/types';
 
-interface Props extends BaseComponentProps {}
+interface Props extends BaseComponentProps {
+  width?: number;
+}
 
-const MotionLink = ({ className, children, href }: Props) => {
+const MotionLink = ({ className, children, href, width = 6 }: Props) => {
   return (
     <motion.a
-      className={`${className} w-6`}
+      className={`${className} w-${width}`}
       href={href}
       target="_blank"
       whileHover={{
