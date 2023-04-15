@@ -10,6 +10,7 @@ const NavBar = () => {
           <CustomLink href="/" title="Home" />
           <CustomLink className="mx-8" href="/about" title="About" />
           <CustomLink href="/projects" title="Projects" />
+          <CustomLink className="ml-8" href="/articles" title="Articles" />
         </nav>
         <Logo
           className="absolute left-[50%] top-2 translate-x-[-50%]"

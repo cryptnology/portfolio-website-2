@@ -1,13 +1,17 @@
+export { default as Article } from './Article';
 export { default as AnimatedText } from './AnimatedText';
 export { default as AnimatedNumber } from './AnimatedNumber';
 export { default as Container } from './Container';
 export { default as CustomLink } from './CustomLink';
 export { default as Education } from './Education';
 export { default as Experience } from './Experience';
+export { default as FeaturedArticle } from './FeaturedArticle';
 export { default as Footer } from './Footer';
 export { default as HireMe } from './HireMe';
 export { default as LiIcon } from './LiIcon';
 export { default as Logo } from './Logo';
 export { default as Skills } from './Skills';
+export { default as MotionImage } from './MotionImage';
 export { default as MotionLink } from './MotionLink';
+export { default as MovingImage } from './MovingImage';
 export { default as NavBar } from './NavBar';

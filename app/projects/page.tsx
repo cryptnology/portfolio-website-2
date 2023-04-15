@@ -1,6 +1,12 @@
-import Image, { StaticImageData } from 'next/image';
+import { StaticImageData } from 'next/image';
 import Link from 'next/link';
-import { AnimatedText, Container, CustomLink, MotionLink } from '@/components';
+import {
+  AnimatedText,
+  Container,
+  CustomLink,
+  MotionLink,
+  MotionImage,
+} from '@/components';
 import { cryptoScreener } from '@/public/images';
 import { GitHub } from '@/Icons';
 
@@ -34,7 +40,14 @@ const FeatureProject = ({
         href={link}
         target="_blank"
       >
-        <Image className="w-full h-auto" src={img} alt={title} priority />
+        <MotionImage
+          className="w-full h-auto"
+          src={img}
+          alt={title}
+          priority
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
       </Link>
       <div className="w-1/2 flex flex-col items-start justify-between pl-6">
         <span className="text-primary font-medium text-xl">{type}</span>
@@ -68,7 +81,14 @@ const Project = ({ type, title, img, link, github }: ProjectProps) => {
         href={link}
         target="_blank"
       >
-        <Image className="w-full h-auto" src={img} alt={title} priority />
+        <MotionImage
+          className="w-full h-auto"
+          src={img}
+          alt={title}
+          priority
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
       </Link>
       <div className="w-full flex flex-col items-start justify-between mt-4">
         <span className="text-primary font-medium text-xl">{type}</span>
