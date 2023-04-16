@@ -36,12 +36,12 @@ const MovingImage = ({ img, title, link }: Props) => {
       onMouseMove={handleMouse}
       onMouseLeave={handleMouseLeave}
     >
-      <h2 className="capitalize text-xl font-semibold hover:underline">
+      <h2 className="capitalize text-xl font-semibold hover:underline text-dark dark:text-light">
         {title}
       </h2>
       <MotionImage
         ref={ref}
-        className="z-10 w-96 h-auto hidden absolute rounded-lg"
+        className="z-10 w-96 h-auto hidden absolute rounded-lg border-2 border-transparent dark:border-light"
         style={{ x, y }}
         src={img}
         alt={title}
