@@ -11,7 +11,7 @@ export const metadata = {
 
 const Home = () => {
   return (
-    <main className="flex items-center text-dark w-full">
+    <main className="flex items-center text-dark w-full dark:text-light">
       <Container className="flex justify-between items-center w-full pt-0">
         <div className="w-1/2">
           <Image
@@ -33,7 +33,7 @@ const Home = () => {
           </p>
           <div className="flex items-center self-start mt-2">
             <Link
-              className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+              className="flex items-center bg-dark dark:bg-light text-light dark:text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:dark:bg-dark hover:text-dark hover:dark:text-light border-2 border-solid border-transparent hover:border-dark hover:dark:border-light"
               href="/dummy.pdf"
               target="_blank"
               download
@@ -42,7 +42,7 @@ const Home = () => {
             </Link>
             <div>
               <CustomLink
-                className="ml-4 text-lg font-medium capitalize text-dark"
+                className="ml-4 text-lg font-medium capitalize text-dark dark:text-light"
                 href="mailto:jamie@cryptnology.dev"
                 title="Contact"
                 target="_blank"

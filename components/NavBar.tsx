@@ -1,11 +1,11 @@
 import { GitHub, LinkedIn, Twitter, YouTube } from '@/Icons';
 
-import { Container, CustomLink, Logo, MotionLink } from '.';
+import { Container, CustomLink, Logo, MotionLink, ToggleThemeButton } from '.';
 
 const NavBar = () => {
   return (
     <Container>
-      <header className="w-full py-8 font-medium flex items-center justify-between">
+      <header className="w-full py-8 font-medium flex items-center justify-between text-dark dark:text-light">
         <nav>
           <CustomLink href="/" title="Home" />
           <CustomLink className="mx-8" href="/about" title="About" />
@@ -32,6 +32,7 @@ const NavBar = () => {
           <MotionLink href="https://www.linkedin.com/in/jamie-anderson-121061200">
             <LinkedIn />
           </MotionLink>
+          <ToggleThemeButton className="ml-6 flex items-center justify-center rounded-full p-1 bg-dark text-light dark:bg-light dark:text-dark" />
         </nav>
       </header>
     </Container>

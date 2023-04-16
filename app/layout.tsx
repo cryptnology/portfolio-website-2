@@ -1,5 +1,5 @@
 import { Montserrat } from 'next/font/google';
-import { Footer, NavBar } from '@/components';
+import { Footer, NavBar, Providers } from '@/components';
 
 import './globals.css';
 
@@ -11,11 +11,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${montserrat.className} bg-light`}>
-      <body className="flex min-h-screen flex-col">
-        <NavBar />
-        {children}
-        <Footer />
+    <html lang="en" className={`${montserrat.className}`}>
+      <body className="flex min-h-screen flex-col bg-light dark:bg-dark">
+        <Providers>
+          <NavBar />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
