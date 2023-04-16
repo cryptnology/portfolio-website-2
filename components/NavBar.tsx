@@ -17,19 +17,25 @@ const NavBar = () => {
           href="/"
         />
         <nav className="flex items-center justify-center">
-          <MotionLink href="https://twitter.com/CryptnologyDev">
+          <MotionLink className="w-6" href="https://twitter.com/CryptnologyDev">
             <Twitter />
           </MotionLink>
           <MotionLink
-            className="mx-6"
+            className="mx-6 w-7"
             href="https://www.youtube.com/channel/UC1ksb5e9FEqKB3Tl3NvaCIw"
           >
             <YouTube />
           </MotionLink>
-          <MotionLink className="mr-6" href="https://github.com/cryptnology">
+          <MotionLink
+            className="mr-6 w-7"
+            href="https://github.com/cryptnology"
+          >
             <GitHub />
           </MotionLink>
-          <MotionLink href="https://www.linkedin.com/in/jamie-anderson-121061200">
+          <MotionLink
+            className="w-6"
+            href="https://www.linkedin.com/in/jamie-anderson-121061200"
+          >
             <LinkedIn />
           </MotionLink>
           <ToggleThemeButton className="ml-6 flex items-center justify-center rounded-full p-1 bg-dark text-light dark:bg-light dark:text-dark" />
