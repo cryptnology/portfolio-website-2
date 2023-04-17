@@ -5,7 +5,11 @@ interface Props extends BaseComponentProps {
 }
 
 const Container = ({ className, children }: Props) => {
-  return <div className={`px-32 ${className}`}>{children}</div>;
+  return (
+    <div className={`px-5 2xl:px-40 lg:px-28 md:px-16 sm:px-10 ${className}`}>
+      {children}
+    </div>
+  );
 };
 
 export default Container;

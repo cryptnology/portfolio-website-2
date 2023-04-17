@@ -21,15 +21,18 @@ const NavBar = () => {
 
   return (
     <Container>
-      <header className="w-full py-8 font-medium flex items-center justify-between text-dark dark:text-light relative">
+      <header className="w-full py-2 font-medium flex items-center justify-between text-dark dark:text-light relative">
         <MobileMenu isOpen={isOpen} handleClick={handleClick} />
-        <div className="w-full flex justify-between item-center lg:hidden">
+        <div className="w-full justify-between items-center hidden lg:flex">
           <nav>
             <CustomLink href="/" title="Home" />
             <CustomLink className="mx-8" href="/about" title="About" />
             <CustomLink href="/projects" title="Projects" />
             <CustomLink className="ml-8" href="/articles" title="Articles" />
           </nav>
+          <div>
+            <Logo href="/" />
+          </div>
           <nav className="flex items-center justify-center">
             <MotionLink
               className="w-6"
@@ -59,7 +62,7 @@ const NavBar = () => {
           </nav>
         </div>
         <Logo
-          className="absolute left-[50%] top-2 translate-x-[-50%]"
+          className="absolute left-[50%] top-2 translate-x-[-50%] lg:hidden"
           href="/"
         />
       </header>

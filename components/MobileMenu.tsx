@@ -15,7 +15,7 @@ const MobileMenu = ({ isOpen, handleClick }: Props) => {
     <>
       {/* Hamburger menu */}
       <button
-        className="flex-col justify-center items-center hidden lg:flex"
+        className="flex-col justify-center items-center flex py-8 lg:hidden"
         onClick={handleClick}
       >
         <span
@@ -36,7 +36,7 @@ const MobileMenu = ({ isOpen, handleClick }: Props) => {
       </button>
       {isOpen && (
         <motion.div
-          className="min-w-[70vw] flex-col items-center justify-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32 text-light dark:text-dark hidden lg:flex"
+          className="min-w-[70vw] flex-col items-center justify-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32 text-light dark:text-dark flex lg:hidden"
           initial={{ scale: 0, opacity: 0, x: '-50%', y: '-50%' }}
           animate={{ scale: 1, opacity: 1 }}
         >
