@@ -1,10 +1,10 @@
 'use client';
 
-import { BaseComponentProps } from '@/types';
+import { LinkProps } from '@/types';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-interface Props extends BaseComponentProps {
+interface Props extends LinkProps {
   title: string;
   target?: string;
   underline?: boolean;

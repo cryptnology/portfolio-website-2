@@ -3,3 +3,9 @@ export interface BaseComponentProps {
   children?: JSX.Element;
   href?: string;
 }
+
+export interface LinkProps extends BaseComponentProps {
+  title: string;
+  target?: string;
+  underline?: boolean;
+}
