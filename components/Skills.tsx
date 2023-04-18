@@ -25,7 +25,7 @@ const Skill = ({ name, x, y }: SkillProps) => {
 const Skills = () => {
   return (
     <>
-      <h2 className="font-bold text-6xl mt-32 lg:text-8xl md:mt-48 w-full text-center">
+      <h2 className="font-bold text-6xl mt-32 lg:text-8xl md:mt-48 w-full text-center mb-2 md:mb-10 2xl:mb-20">
         Skills
       </h2>
       <div className="w-full h-[50vh] sm:h-[60vh] lg:h-[80vh] xl:h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark md:bg-circularLightMd md:dark:bg-circularDarkMd lg:bg-circularLightLg lg:dark:bg-circularDarkLg xl:bg-circularLightXl xl:dark:bg-circularDarkXl">
@@ -42,9 +42,9 @@ const Skills = () => {
         <Skill name="NextJS" x="-20vw" y="-15vw" />
         <Skill name="Solidity" x="15vw" y="-12vw" />
         <Skill name="Figma" x="32vw" y="-5vw" />
-        <Skill name="Tailwind CSS" x="0vw" y="-20vw" />
+        <Skill name="Tailwind CSS" x="0vw" y="-26vw" />
         <Skill name="Playwright" x="-25vw" y="18vw" />
-        <Skill name="Typescript" x="18vw" y="-18vw" />
+        <Skill name="Typescript" x="18vw" y="-22vw" />
       </div>
     </>
   );
