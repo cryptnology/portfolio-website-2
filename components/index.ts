@@ -14,6 +14,7 @@ export { default as Logo } from './Logo';
 export { default as Providers } from './Providers';
 export { default as Skills } from './Skills';
 export { default as ToggleThemeButton } from './ToggleThemeButton';
+export { default as TransitionEffect } from './TransitionEffect';
 export { default as MobileMenu } from './MobileMenu';
 export { default as MotionImage } from './MotionImage';
 export { default as MotionLink } from './MotionLink';
