@@ -15,8 +15,11 @@ const Articles = () => {
   return (
     <Container className="pt-16 pb-32">
       <main className="w-full mb-16 flex flex-col items-center justify-center">
-        <AnimatedText className="mb-16" text="Words Can Change The World!" />
-        <ul className="grid grid-cols-2 gap-16">
+        <AnimatedText
+          className="mb-16 !text-4xl sm:mb-8 sm:!text-6xl lg:!text-7xl"
+          text="Words Can Change The World!"
+        />
+        <ul className="grid grid-cols-1 md:grid-cols-2 md:gap-y-16 gap-8 xl:gap-16">
           <FeaturedArticle
             title="Build A Custom Pagination Component In Reactjs From Scratch"
             summary="Learn how to build a custom pagination component in ReactJS from scratch. Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
