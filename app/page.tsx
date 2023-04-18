@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <>
       <TransitionEffect />
-      <main className="flex items-center text-dark w-full dark:text-light">
+      <main className="mt-24 flex items-center text-dark w-full dark:text-light">
         <Container className="flex justify-between items-center w-full py-12 flex-col lg:flex-row">
           <div className="w-full md:w-[80%] lg:w-1/2">
             <Image

@@ -16,7 +16,7 @@ const Articles = () => {
   return (
     <>
       <TransitionEffect />
-      <Container className="pt-16 pb-32">
+      <Container className="mt-36">
         <main className="w-full mb-16 flex flex-col items-center justify-center">
           <AnimatedText
             className="mb-16 !text-4xl sm:mb-8 sm:!text-6xl lg:!text-7xl"

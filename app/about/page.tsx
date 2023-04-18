@@ -19,7 +19,7 @@ const About = () => {
   return (
     <>
       <TransitionEffect />
-      <Container className="pt-16 pb-32">
+      <Container className="mt-36">
         <main className="flex w-full flex-col items-center justify-center">
           <AnimatedText
             className="mb-8 sm:mb-16 !text-4xl sm:!text-6xl lg:!text-7xl"

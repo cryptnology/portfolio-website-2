@@ -16,7 +16,7 @@ const Projects = () => {
   return (
     <>
       <TransitionEffect />
-      <Container className="pt-16 pb-32">
+      <Container className="mt-36">
         <main className="flex w-full flex-col items-center justify-center">
           <AnimatedText
             className="mb-8 !text-4xl sm:mb-16 sm:!text-6xl lg:!text-7xl"
