@@ -18,9 +18,12 @@ const About = () => {
   return (
     <Container className="pt-16 pb-32">
       <main className="flex w-full flex-col items-center justify-center">
-        <AnimatedText className="mb-16" text="Passion Fuels Purpose!" />
-        <div className="grid w-full grid-cols-8 gap-16">
-          <div className="col-span-3 flex flex-col items-start justify-start">
+        <AnimatedText
+          className="mb-8 sm:mb-16 !text-4xl sm:!text-6xl lg:!text-7xl"
+          text="Passion Fuels Purpose!"
+        />
+        <div className="grid w-full grid-cols-8 gap-8 lg:gap-16">
+          <div className="col-span-8 xl:col-span-4 flex flex-col items-start justify-start order-2">
             <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
               About me
             </h2>
@@ -44,7 +47,7 @@ const About = () => {
               project.
             </p>
           </div>
-          <div className="col-span-3 relative h-max rounded-2xl border-2 border-dark bg-light p-8 dark:bg-dark dark:border-light">
+          <div className="col-span-8 xl:col-span-4 relative h-max rounded-2xl border-2 border-dark bg-light p-8 dark:bg-dark dark:border-light order-1">
             <div className="absolute top-0 -right-3 -z-10 w-[103%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
             <Image
               className="w-full h-auto rounded-2xl"
@@ -54,28 +57,28 @@ const About = () => {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
-          <div className="col-span-2 flex flex-col items-end justify-between">
-            <div className="flex flex-col items-end justify-center">
-              <span className="inline-block text-7xl font-bold text-dark dark:text-light">
+          <div className="col-span-8 flex lg:flex-col items-center justify-between xl:col-span-8 xl:flex-row order-3">
+            <div className="flex flex-col items-center justify-center">
+              <span className="inline-block text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-dark dark:text-light">
                 <AnimatedNumber value={50} />+
               </span>
-              <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
+              <h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-medium capitalize text-dark/75 dark:text-light/75 text-center">
                 Satisfied clients
               </h2>
             </div>
-            <div className="flex flex-col items-end justify-center">
-              <span className="inline-block text-7xl font-bold text-dark dark:text-light">
+            <div className="flex flex-col items-center justify-center">
+              <span className="inline-block text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-dark dark:text-light">
                 <AnimatedNumber value={40} />+
               </span>
-              <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
+              <h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-medium capitalize text-dark/75 dark:text-light/75 text-center">
                 Projects completed
               </h2>
             </div>
-            <div className="flex flex-col items-end justify-center">
-              <span className="inline-block text-7xl font-bold text-dark dark:text-light">
+            <div className="flex flex-col items-center justify-center">
+              <span className="inline-block text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-dark dark:text-light">
                 <AnimatedNumber value={4} />+
               </span>
-              <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
+              <h2 className="text-sm sm:text-base md:text-lg lg:text-xl font-medium capitalize text-dark/75 dark:text-light/75 text-center">
                 Years of experience
               </h2>
             </div>

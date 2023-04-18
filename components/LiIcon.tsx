@@ -16,7 +16,12 @@ const LiIcon = ({ reference }: Props) => {
 
   return (
     <figure className="absolute left-0 stroke-dark dark:stroke-light">
-      <svg className="-rotate-90" width="75" height="75" viewBox="0 0 100 100">
+      <svg
+        className="-rotate-90 w-[40px] h-[40px] md:w-[60px] md:h-[60px]"
+        width="75"
+        height="75"
+        viewBox="0 0 100 100"
+      >
         <circle
           className="stroke-primary dark:stroke-primaryDark stroke-1 fill-none"
           cx="75"
