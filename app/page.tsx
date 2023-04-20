@@ -1,10 +1,9 @@
-import Image from 'next/image';
 import Link from 'next/link';
-import { developer, lightBulb } from '@/public/images';
 import {
   AnimatedText,
   Container,
   CustomLink,
+  EarthCanvas,
   HireMe,
   TransitionEffect,
 } from '@/components';
@@ -20,22 +19,16 @@ const Home = () => {
     <>
       <TransitionEffect />
       <main className="mt-24 mb-16 flex items-center text-dark w-full dark:text-light">
-        <Container className="flex justify-between items-center w-full py-12 flex-col lg:flex-row">
-          <div className="w-full md:w-[80%] lg:w-1/2">
-            <Image
-              className="w-full h-auto"
-              src={developer}
-              alt="Cryptnology"
-              priority
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-            />
+        <Container className="lg:grid lg:grid-cols-2 pb-8 md:pb-10 lg:pb-0 lg:py-8 2xl:py-0 w-full">
+          <div className="cursor-grab active:cursor-grabbing z-0 col-span-1 items-start h-[520px] md:h-[680px] lg:h-[510px] xl:h-[580px] 2xl:h-[620px]">
+            <EarthCanvas />
           </div>
-          <div className="w-full lg:w-1/2 flex flex-col items-center self-center lg:text-center">
+          <div className="w-full flex flex-col items-center self-center lg:text-center col-span-1 lg:pl-2 lg:pr-5 xl:pr-[4rem] 2xl:pr-24">
             <AnimatedText
-              className="!text-3xl !text-center lg:!text-left md:!text-4xl lg:!text-5xl xl:!text-6xl"
+              className="!text-3xl !text-center lg:!text-left md:!text-5xl xl:!text-6xl"
               text="Turning Vision Into Reality With Code And Design."
             />
-            <p className="my-4 text-xs md:text-sm lg:text-base font-medium text-center lg:text-left">
+            <p className="my-4 text-xs md:text-sm xl:text-base font-medium text-center lg:text-left">
               As a skilled full-stack developer, I am dedicated to turning ideas
               into innovative web applications. Explore my latest projects and
               articles, showcasing my expertise in React.js and web development.
@@ -62,14 +55,6 @@ const Home = () => {
           </div>
         </Container>
         <HireMe />
-        <div className="fixed right-8 bottom-8 lg:inline-block w-24 hidden">
-          <Image
-            src={lightBulb}
-            alt="Cryptnology"
-            className="w-full h-auto"
-            priority
-          />
-        </div>
       </main>
     </>
   );

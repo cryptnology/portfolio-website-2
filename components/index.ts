@@ -5,6 +5,7 @@ export { default as Container } from './Container';
 export { default as CustomLink } from './CustomLink';
 export { default as CustomMobileLink } from './CustomMobileLink';
 export { default as Education } from './Education';
+export { default as EarthCanvas } from './canvas/Earth';
 export { default as Experience } from './Experience';
 export { default as FeaturedArticle } from './FeaturedArticle';
 export { default as FeaturedProject } from './FeaturedProject';
