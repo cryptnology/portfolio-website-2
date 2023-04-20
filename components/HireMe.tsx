@@ -10,7 +10,7 @@ const HireMe = () => {
           href="mailto:jamie@cryptnology.dev"
           className="flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark text-light dark:text-dark shadow-md border border-dark dark:bg-light lg:w-20 lg:h-20 rounded-full font-semibold hover:bg-light hover:text-dark hover:dark:text-light hover:dark:bg-dark hover:dark:border-light w-12 h-12 text-[10px] lg:text-sm"
         >
-          Hire Me
+          Email Me
         </Link>
       </div>
     </div>

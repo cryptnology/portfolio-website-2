@@ -34,7 +34,7 @@ const FeaturedProject = ({
           {type}
         </span>
         <Link href={link} target="_blank">
-          <h2 className="my-2 w-full text-left text-sm sm:text-4xl font-bold">
+          <h2 className="my-2 w-full text-left text-sm sm:text-4xl font-bold hover:underline underline-offset-[9px]">
             {title}
           </h2>
         </Link>
