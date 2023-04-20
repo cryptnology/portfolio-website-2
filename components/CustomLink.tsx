@@ -21,7 +21,7 @@ const CustomLink = ({ href, title, className, target, underline }: Props) => {
     >
       {title}
       <div
-        className={`h-[2px] inline-block bg-dark dark:bg-light absolute left-0 -bottom-0.5 ${
+        className={`h-[1px] inline-block bg-dark dark:bg-light absolute left-0 -bottom-0.5 ${
           underline ? 'w-full group-hover:w-0' : 'group-hover:w-full'
         } transition-[width] ease duration-300 ${
           pathname === href ? 'w-full' : 'w-0'

@@ -1,7 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import { CircularText, GitHub, LinkedIn, Twitter, YouTube } from '@/Icons';
+import Link from 'next/link';
+import { CircularText } from '@/Icons';
+import { links, socialLinks } from '@/constants';
 
 import {
   Container,
@@ -11,7 +13,6 @@ import {
   MotionLink,
   ToggleThemeButton,
 } from '.';
-import Link from 'next/link';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,39 +26,30 @@ const NavBar = () => {
       <MobileMenu isOpen={isOpen} handleClick={handleClick} />
       <div className="w-full justify-between items-center hidden lg:flex">
         <nav>
-          <CustomLink href="/" title="Home" />
-          <CustomLink className="mx-8" href="/about" title="About" />
-          <CustomLink href="/projects" title="Projects" />
-          <CustomLink className="ml-8" href="/articles" title="Articles" />
+          {links.map((link, i) => (
+            <CustomLink
+              className="mr-8 last:mr-0"
+              key={i}
+              href={link.link}
+              title={link.title}
+            />
+          ))}
         </nav>
         <Logo href="/" />
         <nav className="flex items-center justify-center">
-          <MotionLink className="w-6" href="https://twitter.com/CryptnologyDev">
-            <Twitter />
-          </MotionLink>
-          <MotionLink
-            className="mx-6 w-7"
-            href="https://www.youtube.com/channel/UC1ksb5e9FEqKB3Tl3NvaCIw"
-          >
-            <YouTube />
-          </MotionLink>
-          <MotionLink
-            className="mr-6 w-7"
-            href="https://github.com/cryptnology"
-          >
-            <GitHub />
-          </MotionLink>
-          <MotionLink
-            className="w-6"
-            href="https://www.linkedin.com/in/jamie-anderson-121061200"
-          >
-            <LinkedIn />
-          </MotionLink>
-          <ToggleThemeButton className="ml-6 flex items-center justify-center rounded-full p-1 bg-dark text-light dark:bg-light dark:text-dark" />
+          {socialLinks.map((link, i) => (
+            <MotionLink
+              key={i}
+              className={`mr-6 last:mr-0 ${link.width}`}
+              href={link.link}
+            >
+              {<link.icon />}
+            </MotionLink>
+          ))}
+          <ToggleThemeButton className="flex items-center justify-center rounded-full p-1 bg-dark text-light dark:bg-light dark:text-dark" />
         </nav>
       </div>
       <Logo className="hidden md:inline-block lg:hidden" href="/" />
-      {/* <div className="flex items-center justify-center overflow-hidden left-auto z-10 top-0 bottom-auto absolute right-1 sm:right-7 md:right-14 lg:hidden"> */}
       <div className="h-auto relative w-24 lg:hidden">
         <CircularText className="fill-dark animate-spin-slow dark:fill-light" />
         <Link
@@ -67,7 +59,6 @@ const NavBar = () => {
           Hire Me
         </Link>
       </div>
-      {/* </div> */}
     </Container>
   );
 };

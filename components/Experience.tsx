@@ -2,6 +2,8 @@
 
 import { useRef } from 'react';
 import { motion, useScroll } from 'framer-motion';
+import { experience } from '@/constants';
+
 import { LiIcon } from '.';
 
 interface DetailsProps {
@@ -74,46 +76,17 @@ const Experience = () => {
           style={{ scaleY: scrollYProgress }}
         />
         <ul className="w-full flex flex-col items-start justify-between ml-2 sm:ml-4">
-          <Details
-            position="Software Engineer"
-            company="Google"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
-            companyLink="https://www.google.com/"
-          />
-          <Details
-            position="Intern"
-            company="Facebook"
-            time="Summer 2021"
-            address="Menlo Park, CA"
-            work="Worked on a team responsible for developing a new mobile app feature that allowed users to create and share short-form video content, including designing and implementing a new user interface and developing the backend infrastructure to support the feature."
-            companyLink="https://www.facebook.com/"
-          />
-          <Details
-            position="Software Engineer"
-            company="Google"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
-            companyLink="https://www.google.com/"
-          />
-          <Details
-            position="Software Engineer"
-            company="Google"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
-            companyLink="https://www.google.com/"
-          />
-          <Details
-            position="Software Engineer"
-            company="Google"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
-            companyLink="https://www.google.com/"
-          />
+          {experience.map((job, i) => (
+            <Details
+              key={i}
+              position={job.position}
+              company={job.company}
+              time={job.time}
+              address={job.address}
+              work={job.work}
+              companyLink={job.companyLink}
+            />
+          ))}
         </ul>
       </div>
     </div>

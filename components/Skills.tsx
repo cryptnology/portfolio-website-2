@@ -14,7 +14,7 @@ const Skill = ({ name, x, y }: SkillProps) => {
       className="flex items-center justify-center rounded-full bg-transparent font-bold md:font-semibold text-dark md:bg-dark md:text-light text-xs lg:text-base py-1.5 px-3 md:py-3 md:px-6 shadow-dark cursor-pointer absolute dark:text-light dark:bg-transparent md:dark:text-dark md:dark:bg-light"
       whileHover={{ scale: 1.05 }}
       initial={{ x: 0, y: 0 }}
-      whileInView={{ x, y, transition: { duration: 1.5 } }}
+      whileInView={{ x: x, y: y, transition: { duration: 1.5 } }}
       viewport={{ once: true }}
     >
       {name}

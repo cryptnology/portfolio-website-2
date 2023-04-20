@@ -2,6 +2,8 @@
 
 import { useRef } from 'react';
 import { motion, useScroll } from 'framer-motion';
+import { education } from '@/constants';
+
 import { LiIcon } from '.';
 
 interface DetailsProps {
@@ -58,24 +60,15 @@ const Education = () => {
           style={{ scaleY: scrollYProgress }}
         />
         <ul className="w-full flex flex-col items-start justify-between ml-2 sm:ml-4">
-          <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020 "
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
-          />
-          <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020 "
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
-          />
-          <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020 "
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
-          />
+          {education.map((course, i) => (
+            <Details
+              key={i}
+              type={course.type}
+              time={course.time}
+              place={course.place}
+              info={course.info}
+            />
+          ))}
         </ul>
       </div>
     </div>
