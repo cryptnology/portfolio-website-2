@@ -15,7 +15,7 @@ const FeaturedProject = ({
   return (
     <article className="w-full flex items-center justify-between rounded-3xl border border-dark border-r-[12px] border-b-[12px] bg-light p-4 lg:p-10 xl:p-8 relative rounded-br-3xl dark:bg-dark dark:border-light flex-col xl:flex-row ">
       <Link
-        className="w-full xl:w-1/2 cursor-pointer overflow-hidden rounded-lg"
+        className="w-full xl:w-1/2 cursor-default lg:cursor-pointer overflow-hidden rounded-lg"
         href={link}
         target="_blank"
       >
@@ -34,7 +34,7 @@ const FeaturedProject = ({
           {type}
         </span>
         <Link href={link} target="_blank">
-          <h2 className="my-2 w-full text-left text-sm sm:text-4xl font-bold hover:underline underline-offset-[5px]">
+          <h2 className="my-2 w-full text-left text-sm sm:text-4xl font-bold hover:underline underline-offset-[5px] cursor-default lg:cursor-pointer">
             {title}
           </h2>
         </Link>
@@ -42,7 +42,10 @@ const FeaturedProject = ({
           {summary}
         </p>
         <div className="mt-2 flex items-center">
-          <MotionLink className="w-9 sm:w-10" href={github}>
+          <MotionLink
+            className="w-9 sm:w-10 cursor-default lg:cursor-pointer"
+            href={github}
+          >
             <GitHub />
           </MotionLink>
           <Link

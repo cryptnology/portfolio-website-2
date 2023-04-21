@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { StaticImageData } from 'next/image';
 
@@ -22,6 +23,15 @@ const Article = ({ img, title, date, link }: ArticleProps) => {
       whileInView={{ y: 0, transition: { duration: 0.5, ease: 'easeInOut' } }}
       viewport={{ once: true }}
     >
+      <Link
+        className="lg:hidden cursor-default lg:cursor-pointer"
+        href={link}
+        target="_blank"
+      >
+        <h2 className="capitalize text-lg sm:text-xl font-semibold hover:underline underline-offset-2 text-dark dark:text-light">
+          {title}
+        </h2>
+      </Link>
       <MovingImage img={img} title={title} link={link} />
       <span className="text-primary text-sm sm:text-base dark:text-primaryDark font-semibold md:pl-4 self-start md:self-center min-w-max">
         {date}

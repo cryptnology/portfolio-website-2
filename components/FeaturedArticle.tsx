@@ -7,7 +7,7 @@ const FeaturedArticle = ({ img, title, time, summary, link }: ArticleProps) => {
   return (
     <li className="col-span-1 w-full p-4 bg-light border border-dark border-r-[12px] border-b-[12px] rounded-2xl relative dark:bg-dark dark:border-light">
       <Link
-        className="w-full inline-block cursor-pointer overflow-hidden rounded-lg"
+        className="w-full inline-block overflow-hidden rounded-lg cursor-default lg:cursor-pointer"
         href={link}
         target="_blank"
       >
@@ -21,19 +21,19 @@ const FeaturedArticle = ({ img, title, time, summary, link }: ArticleProps) => {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
         />
       </Link>
-      <Link href={link} target="_blank">
-        <div className="mb-7">
-          <h2 className="capitalize text-lg sm:text-2xl font-bold my-2 mt-4 text-dark dark:text-light hover:underline underline-offset-4">
+      <div className="mb-7">
+        <Link href={link} target="_blank">
+          <h2 className="capitalize text-lg sm:text-2xl font-bold my-2 mt-4 text-dark dark:text-light hover:underline underline-offset-4 cursor-default lg:cursor-pointer">
             {title}
           </h2>
-          <p className="text-xs sm:text-sm mb-2 text-dark dark:text-light">
-            {summary}
-          </p>
-        </div>
-        <div className="text-primary text-sm sm:text-base dark:text-primaryDark font-semibold absolute bottom-3">
-          {time}
-        </div>
-      </Link>
+        </Link>
+        <p className="text-xs sm:text-sm mb-2 text-dark dark:text-light">
+          {summary}
+        </p>
+      </div>
+      <div className="text-primary text-sm sm:text-base dark:text-primaryDark font-semibold absolute bottom-3">
+        {time}
+      </div>
     </li>
   );
 };

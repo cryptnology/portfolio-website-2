@@ -11,7 +11,7 @@ interface SkillProps {
 const Skill = ({ name, x, y }: SkillProps) => {
   return (
     <motion.div
-      className="flex items-center justify-center rounded-full bg-transparent font-bold md:font-semibold text-dark md:bg-dark md:text-light text-xs lg:text-base py-1.5 px-3 md:py-3 md:px-6 shadow-dark cursor-pointer absolute dark:text-light dark:bg-transparent md:dark:text-dark md:dark:bg-light"
+      className="flex items-center justify-center rounded-full bg-transparent font-bold md:font-semibold text-dark md:bg-dark md:text-light text-xs lg:text-base py-1.5 px-3 md:py-3 md:px-6 shadow-dark absolute dark:text-light dark:bg-transparent md:dark:text-dark md:dark:bg-light cursor-default lg:cursor-pointer"
       whileHover={{ scale: 1.05 }}
       initial={{ x: 0, y: 0 }}
       whileInView={{ x: x, y: y, transition: { duration: 1.5 } }}
@@ -25,12 +25,12 @@ const Skill = ({ name, x, y }: SkillProps) => {
 const Skills = () => {
   return (
     <>
-      <h2 className="font-bold text-6xl mt-32 lg:text-8xl md:mt-48 w-full text-center mb-2 md:mb-10 2xl:mb-20">
+      <h2 className="font-bold text-6xl mt-28 lg:text-8xl md:mt-40 w-full text-center mb-2 md:mb-10 2xl:mb-20">
         Skills
       </h2>
-      <div className="w-full h-[50vh] sm:h-[60vh] lg:h-[80vh] xl:h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark md:bg-circularLightMd md:dark:bg-circularDarkMd lg:bg-circularLightLg lg:dark:bg-circularDarkLg xl:bg-circularLightXl xl:dark:bg-circularDarkXl">
+      <div className="w-full h-[50vh] sm:h-[60vh] lg:h-[80vh] xl:h-screen xl:w-[89%] 2xl:w-[84%] relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark md:bg-circularLightMd md:dark:bg-circularDarkMd lg:bg-circularLightLg lg:dark:bg-circularDarkLg xl:bg-circularLightXl xl:dark:bg-circularDarkXl">
         <motion.div
-          className="flex items-center justify-center rounded-full font-semibold bg-dark text-light text-xs lg:text-base p-2 md:p-4 lg:p-6 xl:p-8 shadow-dark cursor-pointer dark:text-dark dark:bg-light"
+          className="flex items-center justify-center rounded-full font-semibold bg-dark text-light text-xs lg:text-base p-2 md:p-4 lg:p-6 xl:p-8 shadow-dark cursor-default lg:cursor-pointer dark:text-dark dark:bg-light"
           whileHover={{ scale: 1.05 }}
         >
           Web

@@ -17,7 +17,7 @@ const Project = ({ type, title, img, link, github }: ProjectProps) => {
   return (
     <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-r-[12px] border-b-[12px] border-dark bg-light p-4 sm:p-6 relative dark:bg-dark dark:border-light">
       <Link
-        className="w-full cursor-pointer overflow-hidden rounded-lg"
+        className="w-full overflow-hidden rounded-lg cursor-default lg:cursor-pointer"
         href={link}
         target="_blank"
       >
@@ -36,7 +36,7 @@ const Project = ({ type, title, img, link, github }: ProjectProps) => {
           {type}
         </span>
         <Link href={link} target="_blank">
-          <h2 className="my-2 w-full text-left text-2xl lg:text-3xl font-bold text-dark dark:text-light hover:underline underline-offset-4">
+          <h2 className="my-2 w-full text-left text-2xl lg:text-3xl font-bold text-dark dark:text-light hover:underline underline-offset-4 cursor-default lg:cursor-pointer">
             {title}
           </h2>
         </Link>
@@ -44,13 +44,16 @@ const Project = ({ type, title, img, link, github }: ProjectProps) => {
           <div>
             <CustomLink
               title="Visit"
-              className="text-base md:text-lg font-semibold text-dark dark:text-light"
+              className="text-base md:text-lg font-semibold text-dark dark:text-light cursor-default lg:cursor-pointer"
               href={link}
               target="_blank"
               underline
             />
           </div>
-          <MotionLink className="w-6 md:w-8" href={github}>
+          <MotionLink
+            className="w-6 md:w-8 cursor-default lg:cursor-pointer"
+            href={github}
+          >
             <GitHub />
           </MotionLink>
         </div>

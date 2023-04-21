@@ -19,7 +19,7 @@ const MovingImage = ({ img, title, link }: Props) => {
 
   const handleMouse = (event: { pageX: number }) => {
     if (ref.current !== null) ref.current.style.display = 'inline-block';
-    x.set(event.pageX - 130);
+    x.set(event.pageX - 100);
     y.set(-10);
   };
 
@@ -31,6 +31,7 @@ const MovingImage = ({ img, title, link }: Props) => {
 
   return (
     <Link
+      className="hidden lg:block"
       href={link}
       target="_blank"
       onMouseMove={handleMouse}

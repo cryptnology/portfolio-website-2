@@ -63,7 +63,7 @@ const Experience = () => {
   });
 
   return (
-    <div className="mb-40 w-full">
+    <div className="w-full">
       <h2 className="font-bold text-4xl md:text-6xl lg:text-8xl mb-16 md:mb-32 w-full text-center">
         Experience
       </h2>
