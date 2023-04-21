@@ -28,7 +28,7 @@ const Home = () => {
               className="!text-3xl !text-center lg:!text-left md:!text-5xl xl:!text-6xl"
               text="Turning Vision Into Reality With Code And Design."
             />
-            <p className="my-4 text-xs md:text-sm xl:text-base font-medium text-center lg:text-left">
+            <p className="my-4 text-sm xl:text-base font-medium text-center lg:text-left">
               As a skilled full-stack developer, I am dedicated to turning ideas
               into innovative web applications. Explore my latest projects and
               articles, showcasing my expertise in React.js and web development.

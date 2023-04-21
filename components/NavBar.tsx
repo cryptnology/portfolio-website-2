@@ -49,8 +49,8 @@ const NavBar = () => {
           <ToggleThemeButton className="flex items-center justify-center rounded-full p-1 bg-dark text-light dark:bg-light dark:text-dark" />
         </nav>
       </div>
-      <Logo className="hidden mx-auto md:inline-block lg:hidden" href="/" />
-      <div className="h-auto absolute right-0 sm:right-5 md:right-10 w-32 lg:hidden">
+      <Logo className="inline-block lg:hidden" href="/" />
+      <div className="h-auto absolute right-[36%] sm:right-[40%] md:right-[42%] w-32 lg:hidden">
         <CircularText className="fill-dark animate-spin-slow dark:fill-light" />
         <Link
           href="mailto:jamie@cryptnology.dev"
