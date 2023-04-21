@@ -65,9 +65,9 @@ const About = () => {
               ))}
             </div>
           </div>
-          <Skills />
           <Education />
           <Experience />
+          <Skills />
         </main>
       </Container>
     </>

@@ -53,7 +53,7 @@ const Education = () => {
       </h2>
       <div
         ref={ref}
-        className="w-[95%] sm:w-full md:w-[95%] lg:w-[85%] xl:w-[80%] 2xl:w-[70%] mx-auto relative"
+        className="w-[95%] sm:w-full md:w-[95%] lg:w-[85%] xl:w-[70%] 2xl:w-[70%] mx-auto relative"
       >
         <motion.div
           className="absolute left-[19px] md:left-[28px] top-0 w-[2px] md:w-[4px] h-full bg-dark origin-top dark:bg-light"
