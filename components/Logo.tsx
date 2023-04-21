@@ -13,7 +13,7 @@ const Logo = ({ className, href }: Props) => {
     <div className={className}>
       <div className="flex items-center justify-center">
         <MotionLink
-          className="w-16 h-16 text-light bg-dark flex items-center justify-center rounded-full text-2xl font-bold border border-transparent dark:border-light"
+          className="w-16 h-16 text-light bg-dark flex items-center justify-center rounded-full text-2xl font-bold border border-transparent dark:border-light cursor-default lg:cursor-pointer"
           href={href as string}
           whileHover={{
             backgroundColor: [

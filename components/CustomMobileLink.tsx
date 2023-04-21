@@ -6,7 +6,7 @@ import { usePathname, useRouter } from 'next/navigation';
 interface Props extends LinkProps {
   title: string;
   underline?: boolean;
-  toogle: () => void;
+  toggle: () => void;
 }
 
 const CustomMobileLink = ({
@@ -14,13 +14,13 @@ const CustomMobileLink = ({
   title,
   className,
   underline,
-  toogle,
+  toggle,
 }: Props) => {
   const router = useRouter();
   const pathname = usePathname();
 
   const handleClick = () => {
-    toogle();
+    toggle();
     router.push(href as string);
   };
 

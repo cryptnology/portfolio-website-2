@@ -35,7 +35,7 @@ const Home = () => {
             </p>
             <div className="flex items-center lg:self-start mt-2 self-center">
               <Link
-                className="flex items-center bg-dark dark:bg-light text-light dark:text-dark p-2 px-4 rounded-lg font-semibold hover:bg-light hover:dark:bg-dark hover:text-dark hover:dark:text-light border-2 border-solid border-transparent hover:border-dark hover:dark:border-light md:p-2.5 md:px-6 text-base md:text-lg transition-colors"
+                className="flex items-center bg-dark dark:bg-light text-light dark:text-dark p-2 px-4 rounded-lg font-semibold hover:bg-light hover:dark:bg-dark hover:text-dark hover:dark:text-light border-2 border-solid border-transparent hover:border-dark hover:dark:border-light md:p-2.5 md:px-6 text-base md:text-lg transition-colors cursor-default lg:cursor-pointer"
                 href="/dummy.pdf"
                 target="_blank"
                 download
@@ -44,7 +44,7 @@ const Home = () => {
               </Link>
               <div>
                 <CustomLink
-                  className="ml-8 text-base md:text-lg font-medium capitalize text-dark dark:text-light"
+                  className="ml-8 text-base md:text-lg font-medium capitalize text-dark dark:text-light cursor-default lg:cursor-pointer"
                   href="mailto:jamie@cryptnology.dev"
                   title="Contact"
                   target="_blank"

@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { GitHub, LinkedIn, Twitter, YouTube } from '@/Icons';
 
 import { CustomMobileLink, MotionLink, ToggleThemeButton } from '.';
+import { Ref } from 'react';
 
 interface Props {
   isOpen: boolean;
@@ -15,7 +16,7 @@ const MobileMenu = ({ isOpen, handleClick }: Props) => {
     <>
       {/* Hamburger menu */}
       <button
-        className="flex-col justify-center items-center flex py-8 lg:hidden"
+        className="flex-col justify-center items-center flex py-8 lg:hidden cursor-default"
         onClick={handleClick}
       >
         <span
@@ -44,45 +45,52 @@ const MobileMenu = ({ isOpen, handleClick }: Props) => {
             <MotionLink
               className="w-6"
               href="https://twitter.com/CryptnologyDev"
+              toggle={handleClick}
             >
               <Twitter />
             </MotionLink>
             <MotionLink
               className="mx-4 xs:mx-6 w-7"
               href="https://www.youtube.com/channel/UC1ksb5e9FEqKB3Tl3NvaCIw"
+              toggle={handleClick}
             >
               <YouTube />
             </MotionLink>
             <MotionLink
               className="mr-4 xs:mr-6 w-7"
               href="https://github.com/cryptnology"
+              toggle={handleClick}
             >
               <GitHub />
             </MotionLink>
             <MotionLink
               className="w-6"
               href="https://www.linkedin.com/in/jamie-anderson-121061200"
+              toggle={handleClick}
             >
               <LinkedIn />
             </MotionLink>
-            <ToggleThemeButton className="ml-4 xs:ml-6 flex items-center justify-center rounded-full p-1 bg-light text-dark dark:bg-dark dark:text-light" />
+            <ToggleThemeButton
+              className="ml-4 xs:ml-6 flex items-center justify-center rounded-full p-1 bg-light text-dark dark:bg-dark dark:text-light"
+              toggle={handleClick}
+            />
           </nav>
           <nav className="flex items-center flex-col justify-center">
-            <CustomMobileLink href="/" title="Home" toogle={handleClick} />
+            <CustomMobileLink href="/" title="Home" toggle={handleClick} />
             <CustomMobileLink
               href="/about"
               title="About"
-              toogle={handleClick}
+              toggle={handleClick}
             />
             <CustomMobileLink
               href="/projects"
               title="Projects"
-              toogle={handleClick}
+              toggle={handleClick}
             />
             <CustomMobileLink
               href="/articles"
               title="Articles"
-              toogle={handleClick}
+              toggle={handleClick}
             />
           </nav>
         </motion.div>

@@ -3,11 +3,14 @@
 import { motion } from 'framer-motion';
 import { BaseComponentProps } from '@/types';
 
-interface Props extends BaseComponentProps {}
+interface Props extends BaseComponentProps {
+  toggle?: () => void;
+}
 
-const MotionLink = ({ className, children, href }: Props) => {
+const MotionLink = ({ className, children, href, toggle }: Props) => {
   return (
     <motion.a
+      onClick={toggle}
       className={className}
       href={href}
       target="_blank"
