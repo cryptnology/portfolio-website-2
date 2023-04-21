@@ -12,7 +12,7 @@ const Footer = () => {
           </span>
           By{' '}
           <CustomLink
-            title="Cryptnology.Dev"
+            title="Cryptnology"
             href="https://github.com/cryptnology"
             target="_blank"
             underline

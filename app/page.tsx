@@ -4,15 +4,13 @@ import {
   Container,
   CustomLink,
   EarthCanvas,
-  HireMe,
+  EmailMe,
   TransitionEffect,
 } from '@/components';
 import { LinkArrow } from '@/Icons';
+import { homePage } from '@/constants';
 
-export const metadata = {
-  title: 'Jamie Anderson | Cryptnology',
-  description: 'This is my portfolio.',
-};
+export const metadata = homePage.metadata;
 
 const Home = () => {
   return (
@@ -26,27 +24,25 @@ const Home = () => {
           <div className="w-full flex flex-col items-center self-center lg:text-center col-span-1 lg:pl-2 lg:pr-5 xl:pr-[4rem] 2xl:pr-24">
             <AnimatedText
               className="!text-3xl !text-center lg:!text-left md:!text-5xl xl:!text-6xl"
-              text="Turning Vision Into Reality With Code And Design."
+              text={homePage.heading}
             />
-            <p className="my-4 text-sm xl:text-base font-medium text-center lg:text-left">
-              As a skilled full-stack developer, I am dedicated to turning ideas
-              into innovative web applications. Explore my latest projects and
-              articles, showcasing my expertise in React.js and web development.
+            <p className="my-4 text-sm md:text-base font-medium text-center lg:text-left">
+              {homePage.subheading}
             </p>
             <div className="flex items-center lg:self-start mt-2 self-center">
               <Link
                 className="flex items-center bg-dark dark:bg-light text-light dark:text-dark p-2 px-4 rounded-lg font-semibold hover:bg-light hover:dark:bg-dark hover:text-dark hover:dark:text-light border-2 border-solid border-transparent hover:border-dark hover:dark:border-light md:p-2.5 md:px-6 text-base md:text-lg transition-colors cursor-default lg:cursor-pointer"
-                href="/dummy.pdf"
+                href="/resume-anderson.pdf"
                 target="_blank"
                 download
               >
-                Resume <LinkArrow className=" w-5 md:w-6 ml-1" />
+                {homePage.resumeBtn} <LinkArrow className=" w-5 md:w-6 ml-1" />
               </Link>
               <div>
                 <CustomLink
                   className="ml-8 text-base md:text-lg font-medium capitalize text-dark dark:text-light cursor-default lg:cursor-pointer"
                   href="mailto:jamie@cryptnology.dev"
-                  title="Contact"
+                  title={homePage.contact}
                   target="_blank"
                   underline
                 />
@@ -54,7 +50,7 @@ const Home = () => {
             </div>
           </div>
         </Container>
-        <HireMe />
+        <EmailMe />
       </main>
     </>
   );

@@ -248,7 +248,22 @@ const socialLinks = [
   },
 ];
 
+const homePage = {
+  heading: 'Code your dreams into reality, one keystroke at a time',
+  subheading:
+    'As a skilled full-stack developer with expertise in Web3, TypeScript, React.js, and Next.js, I am committed to transforming concepts into cutting-edge web applications. Discover my latest projects and articles, highlighting my proficiency in building robust and dynamic web interfaces.',
+  resumeBtn: 'Resume',
+  contact: 'Contact',
+  metadata: {
+    title: 'Jamie Anderson | Cryptnology',
+    description:
+      'As a skilled full-stack developer with expertise in Web3, TypeScript, React.js, and Next.js, I am committed to transforming concepts into cutting-edge web applications. Discover my latest projects and articles, highlighting my proficiency in building robust and dynamic web interfaces.',
+  },
+  emailMe: 'Email Me',
+};
+
 export {
+  homePage,
   aboutMe,
   experienceNumbers,
   education,

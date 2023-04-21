@@ -11,7 +11,7 @@ export { default as Experience } from './Experience';
 export { default as FeaturedArticle } from './FeaturedArticle';
 export { default as FeaturedProject } from './FeaturedProject';
 export { default as Footer } from './Footer';
-export { default as HireMe } from './HireMe';
+export { default as EmailMe } from './EmailMe';
 export { default as LiIcon } from './LiIcon';
 export { default as Logo } from './Logo';
 export { default as Project } from './Project';

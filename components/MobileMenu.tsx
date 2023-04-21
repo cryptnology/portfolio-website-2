@@ -78,7 +78,7 @@ const MobileMenu = ({ isOpen, handleClick }: Props) => {
                 <LinkedIn />
               </MotionLink>
               <ToggleThemeButton
-                className="ml-4 xs:ml-6 flex items-center justify-center rounded-full p-1 bg-light text-dark dark:bg-dark dark:text-light"
+                className="ml-4 xs:ml-6 flex items-center justify-center rounded-full p-1 bg-light text-dark dark:bg-dark dark:text-light w-[1.65rem] h-[1.65rem]"
                 toggle={handleClick}
               />
             </nav>

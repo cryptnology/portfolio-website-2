@@ -30,7 +30,7 @@ const Logo = ({ className, href }: Props) => {
             },
           }}
         >
-          JA
+          J A
         </MotionLink>
       </div>
     </div>

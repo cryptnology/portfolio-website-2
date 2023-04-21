@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import { CircularText } from '@/Icons';
+import { homePage } from '@/constants';
 
-const HireMe = () => {
+const EmailMe = () => {
   return (
     <div className="fixed left-4 bottom-[5rem] xl:bottom-24 items-center justify-center overflow-hidden hidden lg:flex">
       <div className="lg:w-48 h-auto flex items-center justify-center relative w-24">
@@ -10,11 +11,11 @@ const HireMe = () => {
           href="mailto:jamie@cryptnology.dev"
           className="flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark text-light dark:text-dark shadow-md border border-dark dark:bg-light lg:w-20 lg:h-20 rounded-full font-semibold hover:bg-light hover:text-dark hover:dark:text-light hover:dark:bg-dark hover:dark:border-light w-12 h-12 text-[10px] lg:text-sm transition-colors"
         >
-          Email Me
+          {homePage.emailMe}
         </Link>
       </div>
     </div>
   );
 };
 
-export default HireMe;
+export default EmailMe;

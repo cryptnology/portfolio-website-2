@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { CircularText } from '@/Icons';
-import { links, socialLinks } from '@/constants';
+import { homePage, links, socialLinks } from '@/constants';
 
 import {
   Container,
@@ -46,7 +46,7 @@ const NavBar = () => {
               {<link.icon />}
             </MotionLink>
           ))}
-          <ToggleThemeButton className="flex items-center justify-center rounded-full p-1 bg-dark text-light dark:bg-light dark:text-dark" />
+          <ToggleThemeButton className="flex items-center justify-center rounded-full p-1 bg-dark text-light dark:bg-light dark:text-dark w-[1.65rem] h-[1.65rem]" />
         </nav>
       </div>
       <Logo className="inline-block lg:hidden" href="/" />
@@ -56,7 +56,7 @@ const NavBar = () => {
           href="mailto:jamie@cryptnology.dev"
           className="flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark text-light dark:text-dark shadow-md border border-dark dark:bg-light rounded-full font-semibold hover:bg-light hover:text-dark hover:dark:text-light hover:dark:bg-dark hover:dark:border-light w-[3.5rem] h-[3.5rem] text-[9px] transition-colors cursor-default"
         >
-          Email Me
+          {homePage.emailMe}
         </Link>
       </div>
     </Container>
