@@ -6,81 +6,38 @@ import {
   validation,
 } from '@/public/images';
 
-const aboutMe = [
-  {
-    content:
-      "Hi, I'm CodeBucks, a web developer and UI/UX designer with a passion for creating beautiful, functional, and user-centered digital experiences. With 4 years of experience in the field. Iam always looking for new and innovative ways to bring my clients' visions to life.",
-  },
-  {
-    content:
-      "I believe that design is about more than just making things look pretty - it's about solving problems and creating intuitive, enjoyable experiences for users.",
-  },
-  {
-    content:
-      "Whether I'm working on a website, mobile app, or other digital product, I bring my commitment to design excellence and user-centered thinking to every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.",
-  },
-];
-
 const experienceNumbers = [
   {
-    number: 50,
-    title: 'Satisfied clients',
+    number: 5,
+    title: 'Web2 Projects',
   },
   {
-    number: 40,
-    title: 'Projects completed',
+    number: 3,
+    title: 'Web3 projects',
   },
   {
-    number: 4,
+    number: 1,
     title: 'Years of experience',
   },
 ];
 
 const education = [
   {
-    type: 'Bachelor Of Science In Computer Science',
-    time: '2016-2020',
-    place: 'Massachusetts Institute Of Technology (MIT)',
-    info: 'Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence.',
-  },
-  {
-    type: 'Bachelor Of Science In Computer Science',
-    time: '2016-2020',
-    place: 'Massachusetts Institute Of Technology (MIT)',
-    info: 'Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence.',
-  },
-  {
-    type: 'Bachelor Of Science In Computer Science',
-    time: '2016-2020',
-    place: 'Massachusetts Institute Of Technology (MIT)',
-    info: 'Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence.',
+    type: 'Bachelor of Science in Information Technology',
+    time: '2019-2021',
+    place: 'University Of Technology Sydney (UTS)',
+    info: 'Relevant courses included Web Systems, Applications Programming, Intro to Software Development and Cybersecurity.',
   },
 ];
 
 const experience = [
   {
     position: 'Software Engineer',
-    company: 'Google',
-    time: '2022-Present',
-    address: 'Mountain View, CA',
-    work: "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.",
-    companyLink: 'https://www.facebook.com/',
-  },
-  {
-    position: 'Software Engineer',
-    company: 'Google',
-    time: '2022-Present',
-    address: 'Mountain View, CA',
-    work: "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.",
-    companyLink: 'https://www.facebook.com/',
-  },
-  {
-    position: 'Software Engineer',
-    company: 'Google',
-    time: '2022-Present',
-    address: 'Mountain View, CA',
-    work: "Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization.",
-    companyLink: 'https://www.facebook.com/',
+    company: 'Serenade',
+    time: '2021-Present',
+    address: 'Sydney, AU',
+    work: 'Worked on a team responsible for developing new features for artists to sell music NFTs to their fans. This included building the Next.js website, user interfaces, using all the update best code practices and testing.',
+    companyLink: 'https://serenade.co',
   },
 ];
 
@@ -248,6 +205,7 @@ const socialLinks = [
   },
 ];
 
+/* Page content */
 const homePage = {
   heading: 'Code your dreams into reality, one keystroke at a time',
   subheading:
@@ -262,9 +220,35 @@ const homePage = {
   emailMe: 'Email Me',
 };
 
+const aboutPage = {
+  heading: 'Building the Future Web!',
+  aboutMe: {
+    heading: 'About me',
+    paragraphs: [
+      {
+        content:
+          "Hi, I'm Jamie, a web developer with a passion for creating beautiful, functional, and user-centered digital experiences. With over a years of experience in the field. I'am always looking for new and innovative ways to bring visions to life.",
+      },
+      {
+        content:
+          "I believe that design is about more than just making things look pretty - it's about solving problems and creating intuitive, enjoyable experiences for users.",
+      },
+      {
+        content:
+          "Whether I'm working on a website or other digital product, I bring my commitment to design excellence and user-centered thinking to every project I work on. I look forward to the opportunity to bring my skills and passion to the next project.",
+      },
+    ],
+  },
+  metadata: {
+    title: 'Cryptnology | About Me',
+    description:
+      "Hi, I'm Jamie, a web developer with a passion for creating beautiful, functional, and user-centered digital experiences. With over a years of experience in the field. I'am always looking for new and innovative ways to bring visions to life.",
+  },
+};
+
 export {
   homePage,
-  aboutMe,
+  aboutPage,
   experienceNumbers,
   education,
   experience,

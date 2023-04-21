@@ -9,12 +9,9 @@ import {
   TransitionEffect,
 } from '@/components';
 import { profileImg } from '@/public/images';
-import { aboutMe, experienceNumbers } from '@/constants';
+import { aboutPage, experienceNumbers } from '@/constants';
 
-export const metadata = {
-  title: 'Cryptnology | About',
-  description: 'About me',
-};
+export const metadata = aboutPage.metadata;
 
 const About = () => {
   return (
@@ -24,14 +21,14 @@ const About = () => {
         <main className="flex w-full flex-col items-center justify-center">
           <AnimatedText
             className="mb-8 sm:mb-16 !text-4xl sm:!text-6xl lg:!text-7xl"
-            text="Passion Fuels Purpose!"
+            text={aboutPage.heading}
           />
           <div className="grid w-full grid-cols-8 gap-8 md:gap-10 xl:gap-16">
             <div className="col-span-8 md:col-span-3 lg:col-span-4 xl:col-span-3 flex flex-col items-start justify-start order-2 md:order-1">
               <h2 className="mb-4 text-lg md:text-base lg:text-lg font-bold uppercase text-dark/75 dark:text-light/75">
-                About me
+                {aboutPage.aboutMe.heading}
               </h2>
-              {aboutMe.map((paragraph, i) => (
+              {aboutPage.aboutMe.paragraphs.map((paragraph, i) => (
                 <p
                   key={i}
                   className="mb-4 last:mb-0 font-medium md:text-sm lg:text-base text-dark dark:text-light"
