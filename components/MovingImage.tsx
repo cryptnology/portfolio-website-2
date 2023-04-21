@@ -36,7 +36,7 @@ const MovingImage = ({ img, title, link }: Props) => {
       onMouseMove={handleMouse}
       onMouseLeave={handleMouseLeave}
     >
-      <h2 className="capitalize text-lg sm:text-xl font-semibold hover:underline underline-offset-[6px] text-dark dark:text-light">
+      <h2 className="capitalize text-lg sm:text-xl font-semibold hover:underline underline-offset-2 text-dark dark:text-light">
         {title}
       </h2>
       <MotionImage

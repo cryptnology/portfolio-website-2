@@ -34,7 +34,7 @@ const FeaturedProject = ({
           {type}
         </span>
         <Link href={link} target="_blank">
-          <h2 className="my-2 w-full text-left text-sm sm:text-4xl font-bold hover:underline underline-offset-[9px]">
+          <h2 className="my-2 w-full text-left text-sm sm:text-4xl font-bold hover:underline underline-offset-[5px]">
             {title}
           </h2>
         </Link>
@@ -46,7 +46,7 @@ const FeaturedProject = ({
             <GitHub />
           </MotionLink>
           <Link
-            className="ml-4 rounded-lg bg-dark text-light p-1.5 px-4 sm:px-6 text-base sm:text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light"
+            className="ml-4 rounded-lg bg-dark text-light p-1.5 px-4 sm:px-6 text-base sm:text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light transition-colors"
             href={link}
             target="_blank"
           >

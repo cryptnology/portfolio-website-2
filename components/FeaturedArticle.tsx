@@ -23,7 +23,7 @@ const FeaturedArticle = ({ img, title, time, summary, link }: ArticleProps) => {
       </Link>
       <Link href={link} target="_blank">
         <div className="mb-7">
-          <h2 className="capitalize text-lg sm:text-2xl font-bold my-2 mt-4 text-dark dark:text-light hover:underline underline-offset-[7px]">
+          <h2 className="capitalize text-lg sm:text-2xl font-bold my-2 mt-4 text-dark dark:text-light hover:underline underline-offset-4">
             {title}
           </h2>
           <p className="text-xs sm:text-sm mb-2 text-dark dark:text-light">
