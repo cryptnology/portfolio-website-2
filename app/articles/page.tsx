@@ -5,12 +5,9 @@ import {
   FeaturedArticle,
   TransitionEffect,
 } from '@/components';
-import { articles, featuredArticles } from '@/constants';
+import { articlesPage } from '@/constants';
 
-export const metadata = {
-  title: 'Cryptnology | Articles',
-  description: 'Articles',
-};
+export const metadata = articlesPage.metadata;
 
 const Articles = () => {
   return (
@@ -19,11 +16,11 @@ const Articles = () => {
       <Container className="mt-36 mb-16">
         <main className="w-full mb-16 flex flex-col items-center justify-center">
           <AnimatedText
-            className="mb-16 !text-4xl sm:mb-8 sm:!text-6xl lg:!text-7xl"
-            text="Words Can Change The World!"
+            className="mb-8 !text-4xl sm:mb-14 lg:mb-16 sm:!text-6xl lg:!text-7xl"
+            text={articlesPage.heading}
           />
           <ul className="grid grid-cols-1 lg:grid-cols-2 lg:gap-y-16 gap-8 xl:gap-16">
-            {featuredArticles.map((article, i) => (
+            {articlesPage.featuredArticles.map((article, i) => (
               <FeaturedArticle
                 key={i}
                 title={article.title}
@@ -35,10 +32,10 @@ const Articles = () => {
             ))}
           </ul>
           <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">
-            All Articles
+            {articlesPage.articlesHeading}
           </h2>
           <ul className="w-full">
-            {articles.map((article, i) => (
+            {articlesPage.articles.map((article, i) => (
               <Article
                 key={i}
                 title={article.title}

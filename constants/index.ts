@@ -41,71 +41,6 @@ const experience = [
   },
 ];
 
-const featuredArticles = [
-  {
-    title: 'Build A Custom Pagination Component In Reactjs From Scratch',
-    summary:
-      'Learn how to build a custom pagination component in ReactJS from scratch. Follow this step-by-step guide to integrate Pagination component in your ReactJS project.',
-    time: '9 min read"',
-    link: '/',
-    img: pagination,
-  },
-  {
-    title:
-      'Creating Stunning Loading Screens In React: Build 3 Types Of Loading Screens',
-    summary:
-      'Learn how to create stunning loading screens in React with 3 different methods. Discover how to use React-Loading, React-Lottie & build a custom loading screen. Improve the user experience.',
-    time: '10 min read',
-    link: '/',
-    img: loadingScreen,
-  },
-];
-
-const articles = [
-  {
-    title:
-      'Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling',
-    date: 'March 22, 2023',
-    link: '/',
-    img: validation,
-  },
-  {
-    title:
-      'Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling',
-    date: 'March 22, 2023',
-    link: '/',
-    img: validation,
-  },
-  {
-    title:
-      'Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling',
-    date: 'March 22, 2023',
-    link: '/',
-    img: validation,
-  },
-  {
-    title:
-      'Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling',
-    date: 'March 22, 2023',
-    link: '/',
-    img: validation,
-  },
-  {
-    title:
-      'Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling',
-    date: 'March 22, 2023',
-    link: '/',
-    img: validation,
-  },
-  {
-    title:
-      'Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling',
-    date: 'March 22, 2023',
-    link: '/',
-    img: validation,
-  },
-];
-
 const links = [
   {
     title: 'Home',
@@ -152,7 +87,7 @@ const socialLinks = [
 const homePage = {
   heading: 'Code your dreams into reality, one keystroke at a time',
   subheading:
-    'As a skilled full-stack developer with expertise in Web3, TypeScript, React.js, and Next.js, I am committed to transforming concepts into cutting-edge web applications. Discover my latest projects and articles, highlighting my proficiency in building robust and dynamic web interfaces.',
+    'As a skilled full-stack developer with expertise in Web3, Typescript, React.js, and Next.js, I am committed to transforming concepts into cutting-edge web applications. Discover my latest projects and articles, highlighting my proficiency in building robust and dynamic web interfaces.',
   resumeBtn: 'Resume',
   contact: 'Contact',
   metadata: {
@@ -208,15 +143,51 @@ const projectsPage = {
   },
 };
 
+const articlesPage = {
+  heading: 'Spread knowledge with words!',
+  articlesHeading: 'All Articles',
+  featuredArticles: [
+    {
+      title: 'Build A Custom Pagination Component In Reactjs From Scratch',
+      summary:
+        'Learn how to build a custom pagination component in ReactJS from scratch. Follow this step-by-step guide to integrate Pagination component in your ReactJS project.',
+      time: 9,
+      link: '/',
+      img: pagination,
+    },
+    {
+      title:
+        'Creating Stunning Loading Screens In React: Build 3 Types Of Loading Screens',
+      summary:
+        'Learn how to create stunning loading screens in React with 3 different methods. Discover how to use React-Loading, React-Lottie & build a custom loading screen. Improve the user experience.',
+      time: 10,
+      link: '/',
+      img: loadingScreen,
+    },
+  ],
+  articles: [
+    {
+      title:
+        'Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling',
+      date: 'March 22, 2023',
+      link: '/',
+      img: validation,
+    },
+  ],
+  metadata: {
+    title: 'Cryptnology | Articles',
+    description: 'Articles',
+  },
+};
+
 export {
   homePage,
   aboutPage,
   projectsPage,
+  articlesPage,
   experienceNumbers,
   education,
   experience,
-  featuredArticles,
-  articles,
   links,
   socialLinks,
 };

@@ -9,7 +9,7 @@ import { MovingImage } from '.';
 export interface ArticleProps {
   img: StaticImageData;
   title: string;
-  time?: string;
+  time?: number;
   summary?: string;
   link: string;
   date?: string;
