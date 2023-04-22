@@ -1,4 +1,4 @@
-export { default as cryptoScreener } from './crypto-screener-cover-image.jpg';
+export { default as filmpire } from './filmpire.png';
 export { default as developer } from './developer-pic-1.png';
 export { default as loadingScreen } from './create loading screen in react js.jpg';
 export { default as pagination } from './pagination component in reactjs.jpg';

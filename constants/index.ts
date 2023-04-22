@@ -1,6 +1,6 @@
 import { GitHub, LinkedIn, Twitter, YouTube } from '@/Icons';
 import {
-  cryptoScreener,
+  filmpire,
   loadingScreen,
   pagination,
   validation,
@@ -38,63 +38,6 @@ const experience = [
     address: 'Sydney, AU',
     work: 'Worked on a team responsible for developing new features for artists to sell music NFTs to their fans. This included building the Next.js website, user interfaces, using all the update best code practices and testing.',
     companyLink: 'https://serenade.co',
-  },
-];
-
-const projects = [
-  {
-    type: 'Featured Project',
-    title: 'Crypto Screener Application',
-    summary:
-      'A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.',
-    img: cryptoScreener,
-    link: '/',
-    github: '/',
-  },
-  {
-    type: 'Project',
-    title: 'Crypto Screener Application',
-    summary:
-      'A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.',
-    img: cryptoScreener,
-    link: '/',
-    github: '/',
-  },
-  {
-    type: 'Project',
-    title: 'Crypto Screener Application',
-    summary:
-      'A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.',
-    img: cryptoScreener,
-    link: '/',
-    github: '/',
-  },
-  {
-    type: 'Featured Project',
-    title: 'Crypto Screener Application',
-    summary:
-      'A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.',
-    img: cryptoScreener,
-    link: '/',
-    github: '/',
-  },
-  {
-    type: 'Project',
-    title: 'Crypto Screener Application',
-    summary:
-      'A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.',
-    img: cryptoScreener,
-    link: '/',
-    github: '/',
-  },
-  {
-    type: 'Project',
-    title: 'Crypto Screener Application',
-    summary:
-      'A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency.',
-    img: cryptoScreener,
-    link: '/',
-    github: '/',
   },
 ];
 
@@ -246,13 +189,32 @@ const aboutPage = {
   },
 };
 
+const projectsPage = {
+  heading: 'Imagination transcends knowledge!',
+  projects: [
+    {
+      type: 'Featured Project',
+      title: 'Filmpire',
+      summary:
+        'An AI powered movie app that allows you to search for the latest movies via categories, genres or a search bar and is fully responsive with the choice of using a dark or light theme. You can also create / log in to your profile where can see all your favourite and watchlisted movies. The app is built using React, Redux, React Router, Alan AI, Axios, Material UI and the TMDB API.',
+      img: filmpire,
+      link: 'https://filmpire-omega.vercel.app',
+      github: 'https://github.com/cryptnology/filmpire',
+    },
+  ],
+  metadata: {
+    title: 'Cryptnology | Projects',
+    description: 'My projects.',
+  },
+};
+
 export {
   homePage,
   aboutPage,
+  projectsPage,
   experienceNumbers,
   education,
   experience,
-  projects,
   featuredArticles,
   articles,
   links,

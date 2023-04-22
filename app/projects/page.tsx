@@ -5,12 +5,10 @@ import {
   FeaturedProject,
   Project,
 } from '@/components';
-import { projects } from '@/constants';
+import { projectsPage } from '@/constants';
+import { isOdd } from '@/utils';
 
-export const metadata = {
-  title: 'Cryptnology | Projects',
-  description: 'My projects.',
-};
+export const metadata = projectsPage.metadata;
 
 const Projects = () => {
   return (
@@ -20,28 +18,34 @@ const Projects = () => {
         <main className="flex w-full flex-col items-center justify-center">
           <AnimatedText
             className="mb-8 !text-4xl sm:mb-16 sm:!text-6xl lg:!text-7xl"
-            text="Imagination Trumps Knowledge!"
+            text={projectsPage.heading}
           />
-          <div className="grid grid-col-12 gap-24 gap-y-24 md:gap-y-32 gap-x-0 lg:gap-x-8 xl:gap-x-16">
-            {projects.map((project, i) => (
+          <div className="w-full grid grid-col-12 gap-24 gap-y-24 md:gap-y-32 gap-x-0 lg:gap-x-8 xl:gap-x-16">
+            {projectsPage.projects.map((project, i) => (
               <div
                 key={i}
                 className={`col-span-12 ${
-                  project.type === 'Project' && 'lg:col-span-6'
+                  !project?.summary &&
+                  !isOdd(projectsPage.projects.length) &&
+                  'xl:w-[650px] xl:mx-auto'
+                } ${
+                  !project?.summary &&
+                  isOdd(projectsPage.projects.length) &&
+                  'lg:col-span-6'
                 }`}
               >
-                {project.type === 'Project' ? (
-                  <Project
+                {project?.summary ? (
+                  <FeaturedProject
                     title={project.title}
+                    summary={project.summary}
                     link={project.link}
                     type={project.type}
                     img={project.img}
                     github={project.github}
                   />
                 ) : (
-                  <FeaturedProject
+                  <Project
                     title={project.title}
-                    summary={project.summary}
                     link={project.link}
                     type={project.type}
                     img={project.img}

@@ -29,19 +29,21 @@ const FeaturedProject = ({
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
         />
       </Link>
-      <div className="w-full xl:w-1/2 flex flex-col items-start justify-between pt-6 lg:pl-6">
-        <span className="text-primary dark:text-primaryDark font-medium text-base sm:text-xl">
-          {type}
-        </span>
-        <Link href={link} target="_blank">
-          <h2 className="my-2 w-full text-left text-sm sm:text-4xl font-bold hover:underline underline-offset-[5px] cursor-default lg:cursor-pointer">
-            {title}
-          </h2>
-        </Link>
-        <p className="my-2 font-medium text-dark dark:text-light text-sm sm:text-base">
-          {summary}
-        </p>
-        <div className="mt-2 flex items-center">
+      <div className="w-full xl:w-1/2 flex flex-col items-start justify-between pt-6 xl:pt-0 xl:pl-6">
+        <div className="mb-16 sm:mb-20 lg:mb-16">
+          <span className="text-primary dark:text-primaryDark font-medium text-base sm:text-xl">
+            {type}
+          </span>
+          <Link href={link} target="_blank">
+            <h2 className="my-2 w-full text-left text-sm sm:text-4xl font-bold hover:underline underline-offset-[5px] cursor-default lg:cursor-pointer">
+              {title}
+            </h2>
+          </Link>
+          <p className="my-2 font-medium text-dark dark:text-light text-sm sm:text-base">
+            {summary}
+          </p>
+        </div>
+        <div className="mt-2 flex items-center absolute bottom-7">
           <MotionLink
             className="w-9 sm:w-10 cursor-default lg:cursor-pointer"
             href={github}
