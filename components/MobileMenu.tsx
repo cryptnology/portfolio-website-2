@@ -51,6 +51,7 @@ const MobileMenu = ({ isOpen, handleClick }: Props) => {
             <nav className="flex items-center justify-center flex-wrap mb-6">
               {socialLinks.map((link, i) => (
                 <MotionLink
+                  key={i}
                   className={`mr-4 xs:mr-6 last:mr-0 ${link.width}`}
                   href={link.link}
                   toggle={handleClick}
