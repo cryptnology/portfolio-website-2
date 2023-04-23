@@ -1,10 +1,5 @@
 import { GitHub, LinkedIn, Twitter, YouTube } from '@/Icons';
-import {
-  filmpire,
-  loadingScreen,
-  pagination,
-  validation,
-} from '@/public/images';
+import { filmpire, nextjs, reactjs, web3, blockchain } from '@/public/images';
 
 const experienceNumbers = [
   {
@@ -55,8 +50,8 @@ const links = [
     link: '/projects',
   },
   {
-    title: 'Articles',
-    link: '/articles',
+    title: 'Learning',
+    link: '/learning',
   },
 ];
 
@@ -143,26 +138,39 @@ const projectsPage = {
   },
 };
 
-const articlesPage = {
-  heading: 'Spread knowledge with words!',
-  articlesHeading: 'All Articles',
+const learningPage = {
+  heading: 'Knowledge is power!',
+  articlesHeading: 'All videos',
   featuredArticles: [
     {
-      title: 'Build A Custom Pagination Component In Reactjs From Scratch',
-      summary:
-        'Learn how to build a custom pagination component in ReactJS from scratch. Follow this step-by-step guide to integrate Pagination component in your ReactJS project.',
+      title: 'Next.js 13 - The basics',
+      summary: 'Learn about all the new features in Next.js version 13.',
       time: 9,
-      link: '/',
-      img: pagination,
+      link: 'https://www.youtube.com/watch?v=__mSgDEOyv8',
+      img: nextjs,
     },
     {
-      title:
-        'Creating Stunning Loading Screens In React: Build 3 Types Of Loading Screens',
+      title: 'React.js 18 - Migrating from v17 or v16',
+      summary: 'Learn about all the new features in React.js version 18.',
+      time: 15,
+      link: 'https://www.youtube.com/watch?v=bCZVos-yZXw',
+      img: reactjs,
+    },
+    {
+      title: 'What is Web 3.0?',
       summary:
-        'Learn how to create stunning loading screens in React with 3 different methods. Discover how to use React-Loading, React-Lottie & build a custom loading screen. Improve the user experience.',
-      time: 10,
-      link: '/',
-      img: loadingScreen,
+        'Learn about Web 3.0 and how it differs from the past versions of the internet.',
+      time: 9,
+      link: 'https://www.youtube.com/watch?v=nHhAEkG1y2U',
+      img: web3,
+    },
+    {
+      title: 'How does a blockchain work?',
+      summary:
+        'Learn what is a blockchain, how do they work and why blockchains are so special.',
+      time: 6,
+      link: 'https://www.youtube.com/watch?v=SSo_EIwHSd4',
+      img: blockchain,
     },
   ],
   articles: [
@@ -171,12 +179,12 @@ const articlesPage = {
         'Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling',
       date: 'March 22, 2023',
       link: '/',
-      img: validation,
+      img: blockchain,
     },
   ],
   metadata: {
-    title: 'Cryptnology | Articles',
-    description: 'Articles',
+    title: 'Cryptnology | Learning',
+    description: 'Learning',
   },
 };
 
@@ -184,7 +192,7 @@ export {
   homePage,
   aboutPage,
   projectsPage,
-  articlesPage,
+  learningPage,
   experienceNumbers,
   education,
   experience,

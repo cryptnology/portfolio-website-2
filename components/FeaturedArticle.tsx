@@ -32,7 +32,7 @@ const FeaturedArticle = ({ img, title, time, summary, link }: ArticleProps) => {
         </p>
       </div>
       <div className="text-primary text-sm sm:text-base dark:text-primaryDark font-semibold absolute bottom-3">
-        {time} min read
+        {time} min watch
       </div>
     </li>
   );

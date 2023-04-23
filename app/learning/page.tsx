@@ -5,11 +5,11 @@ import {
   FeaturedArticle,
   TransitionEffect,
 } from '@/components';
-import { articlesPage } from '@/constants';
+import { learningPage } from '@/constants';
 
-export const metadata = articlesPage.metadata;
+export const metadata = learningPage.metadata;
 
-const Articles = () => {
+const Learning = () => {
   return (
     <>
       <TransitionEffect />
@@ -17,10 +17,10 @@ const Articles = () => {
         <main className="w-full mb-16 flex flex-col items-center justify-center">
           <AnimatedText
             className="mb-8 !text-4xl sm:mb-14 lg:mb-16 sm:!text-6xl lg:!text-7xl"
-            text={articlesPage.heading}
+            text={learningPage.heading}
           />
           <ul className="grid grid-cols-1 lg:grid-cols-2 lg:gap-y-16 gap-8 xl:gap-16">
-            {articlesPage.featuredArticles.map((article, i) => (
+            {learningPage.featuredArticles.map((article, i) => (
               <FeaturedArticle
                 key={i}
                 title={article.title}
@@ -32,10 +32,10 @@ const Articles = () => {
             ))}
           </ul>
           <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">
-            {articlesPage.articlesHeading}
+            {learningPage.articlesHeading}
           </h2>
           <ul className="w-full">
-            {articlesPage.articles.map((article, i) => (
+            {learningPage.articles.map((article, i) => (
               <Article
                 key={i}
                 title={article.title}
@@ -51,4 +51,4 @@ const Articles = () => {
   );
 };
 
-export default Articles;
+export default Learning;

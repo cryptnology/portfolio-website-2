@@ -1,6 +1,6 @@
+export { default as blockchain } from './blockchain.png';
 export { default as filmpire } from './filmpire.png';
-export { default as developer } from './developer-pic-1.png';
-export { default as loadingScreen } from './create loading screen in react js.jpg';
-export { default as pagination } from './pagination component in reactjs.jpg';
+export { default as nextjs } from './nextjs13.png';
 export { default as profileImg } from './profile-image.png';
-export { default as validation } from './form validation in reactjs using custom react hook.png';
+export { default as reactjs } from './reactjs18.jpg';
+export { default as web3 } from './web3.png';
