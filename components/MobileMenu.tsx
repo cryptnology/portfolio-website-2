@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { GitHub, LinkedIn, Twitter, YouTube } from '@/Icons';
+import { links, socialLinks } from '@/constants';
 
 import {
   CheckOutsideClick,
@@ -49,56 +49,29 @@ const MobileMenu = ({ isOpen, handleClick }: Props) => {
             animate={{ scale: 1, opacity: 1 }}
           >
             <nav className="flex items-center justify-center flex-wrap mb-6">
-              <MotionLink
-                className="w-6"
-                href="https://twitter.com/CryptnologyDev"
-                toggle={handleClick}
-              >
-                <Twitter />
-              </MotionLink>
-              <MotionLink
-                className="mx-4 xs:mx-6 w-7"
-                href="https://www.youtube.com/channel/UC1ksb5e9FEqKB3Tl3NvaCIw"
-                toggle={handleClick}
-              >
-                <YouTube />
-              </MotionLink>
-              <MotionLink
-                className="mr-4 xs:mr-6 w-7"
-                href="https://github.com/cryptnology"
-                toggle={handleClick}
-              >
-                <GitHub />
-              </MotionLink>
-              <MotionLink
-                className="w-6"
-                href="https://www.linkedin.com/in/jamie-anderson-121061200"
-                toggle={handleClick}
-              >
-                <LinkedIn />
-              </MotionLink>
+              {socialLinks.map((link, i) => (
+                <MotionLink
+                  className={`mr-4 xs:mr-6 last:mr-0 ${link.width}`}
+                  href={link.link}
+                  toggle={handleClick}
+                >
+                  <link.icon />
+                </MotionLink>
+              ))}
               <ToggleThemeButton
-                className="ml-4 xs:ml-6 flex items-center justify-center rounded-full p-1 bg-light text-dark dark:bg-dark dark:text-light w-[1.65rem] h-[1.65rem]"
+                className="flex items-center justify-center rounded-full p-1 bg-light text-dark dark:bg-dark dark:text-light w-[1.65rem] h-[1.65rem]"
                 toggle={handleClick}
               />
             </nav>
             <nav className="flex items-center flex-col justify-center">
-              <CustomMobileLink href="/" title="Home" toggle={handleClick} />
-              <CustomMobileLink
-                href="/about"
-                title="About"
-                toggle={handleClick}
-              />
-              <CustomMobileLink
-                href="/projects"
-                title="Projects"
-                toggle={handleClick}
-              />
-              <CustomMobileLink
-                href="/articles"
-                title="Articles"
-                toggle={handleClick}
-              />
+              {links.map((link, i) => (
+                <CustomMobileLink
+                  key={i}
+                  href={link.link}
+                  title={link.title}
+                  toggle={handleClick}
+                />
+              ))}
             </nav>
           </motion.div>
         </CheckOutsideClick>
