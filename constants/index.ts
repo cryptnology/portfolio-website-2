@@ -1,13 +1,12 @@
 import { GitHub, LinkedIn, Twitter, YouTube } from '@/Icons';
 import {
   filmpire,
-  nextjs,
+  nextjs13,
   reactjs18,
   web3,
   blockchain,
   evmDevelopment,
   chatGpt,
-  figma,
   git,
   javascript,
   reactjs,
@@ -15,6 +14,8 @@ import {
   tailwind,
   threejs,
   typescript,
+  solidity,
+  nextjs,
 } from '@/public/images';
 
 const links = [
@@ -123,16 +124,16 @@ const aboutPage = {
   ],
   technologies: [
     {
-      name: 'JavaScript',
-      icon: javascript,
-    },
-    {
       name: 'TypeScript',
       icon: typescript,
     },
     {
       name: 'React JS',
       icon: reactjs,
+    },
+    {
+      name: 'Next JS',
+      icon: nextjs,
     },
     {
       name: 'Redux Toolkit',
@@ -151,8 +152,8 @@ const aboutPage = {
       icon: git,
     },
     {
-      name: 'figma',
-      icon: figma,
+      name: 'solidity',
+      icon: solidity,
     },
   ],
   metadata: {
@@ -190,7 +191,7 @@ const learningPage = {
       summary: 'Learn about all the new features in Next.js version 13.',
       amount: 9,
       link: 'https://www.youtube.com/watch?v=__mSgDEOyv8',
-      img: nextjs,
+      img: nextjs13,
     },
     {
       title: 'React.js 18 - Migrating from v17 or v16',
