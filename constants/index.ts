@@ -126,14 +126,6 @@ const aboutPage = {
   ],
   technologies: [
     {
-      name: 'HTML 5',
-      icon: html,
-    },
-    {
-      name: 'CSS 3',
-      icon: css,
-    },
-    {
       name: 'JavaScript',
       icon: javascript,
     },
@@ -152,10 +144,6 @@ const aboutPage = {
     {
       name: 'Tailwind CSS',
       icon: tailwind,
-    },
-    {
-      name: 'Node JS',
-      icon: nodejs,
     },
     {
       name: 'Three JS',
