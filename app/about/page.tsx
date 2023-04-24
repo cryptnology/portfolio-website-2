@@ -9,7 +9,7 @@ import {
   TransitionEffect,
 } from '@/components';
 import { profileImg } from '@/public/images';
-import { aboutPage, experienceNumbers } from '@/constants';
+import { aboutPage } from '@/constants';
 
 export const metadata = aboutPage.metadata;
 
@@ -47,7 +47,7 @@ const About = () => {
               />
             </div>
             <div className="col-span-8 md:mt-10 xl:col-span-2 xl:flex-col xl:items-end flex items-center justify-between order-3">
-              {experienceNumbers.map((experience, i) => (
+              {aboutPage.experienceNumbers.map((experience, i) => (
                 <div
                   key={i}
                   className="flex flex-col items-center xl:items-end justify-center"
@@ -62,8 +62,8 @@ const About = () => {
               ))}
             </div>
           </div>
-          <Education />
-          <Experience />
+          <Education education={aboutPage.education} />
+          <Experience experience={aboutPage.experience} />
           <Skills />
         </main>
       </Container>

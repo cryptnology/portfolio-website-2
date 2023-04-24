@@ -52,7 +52,7 @@ const MobileMenu = ({ isOpen, handleClick }: Props) => {
               {socialLinks.map((link, i) => (
                 <MotionLink
                   key={i}
-                  className={`mr-4 xs:mr-6 last:mr-0 ${link.width}`}
+                  className="mr-4 xs:mr-6 last:mr-0 w-7"
                   href={link.link}
                   toggle={handleClick}
                 >

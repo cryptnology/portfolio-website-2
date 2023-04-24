@@ -2,27 +2,27 @@
 
 import { useRef } from 'react';
 import { motion, useScroll } from 'framer-motion';
-import { experience } from '@/constants';
 
 import { LiIcon } from '.';
 
-interface DetailsProps {
+interface Experience {
   position: string;
   company: string;
-  companyLink: string;
   time: string;
   address: string;
   work: string;
+  companyLink: string;
 }
 
-const Details = ({
-  position,
-  company,
-  companyLink,
-  time,
-  address,
-  work,
-}: DetailsProps) => {
+interface PositionProps {
+  details: Experience;
+}
+
+interface ExperienceProps {
+  experience: Experience[];
+}
+
+const Position = ({ details }: PositionProps) => {
   const ref = useRef<HTMLLIElement>(null);
 
   return (
@@ -37,25 +37,25 @@ const Details = ({
         transition={{ duration: 0.5, type: 'spring' }}
       >
         <h3 className="capitalize font-bold text-lg sm:text-xl md:text-2xl">
-          {position}{' '}
+          {details.position}{' '}
           <a
             className="text-primary dark:text-primaryDark capitalize"
-            href={companyLink}
+            href={details.companyLink}
             target="_blank"
           >
-            @{company}
+            @{details.company}
           </a>
         </h3>
         <span className="capitalize font-medium text-dark/75 dark:text-light/75 text-sm sm:text-base">
-          {time} | {address}
+          {details.time} | {details.address}
         </span>
-        <p className="font-medium w-full">{work}</p>
+        <p className="font-medium w-full">{details.work}</p>
       </motion.div>
     </li>
   );
 };
 
-const Experience = () => {
+const Experience = ({ experience }: ExperienceProps) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -76,16 +76,8 @@ const Experience = () => {
           style={{ scaleY: scrollYProgress }}
         />
         <ul className="w-full flex flex-col items-start justify-between ml-2 sm:ml-4">
-          {experience.map((job, i) => (
-            <Details
-              key={i}
-              position={job.position}
-              company={job.company}
-              time={job.time}
-              address={job.address}
-              work={job.work}
-              companyLink={job.companyLink}
-            />
+          {experience.map((position, i) => (
+            <Position key={i} details={position} />
           ))}
         </ul>
       </div>

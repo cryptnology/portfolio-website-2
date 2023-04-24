@@ -2,18 +2,24 @@
 
 import { useRef } from 'react';
 import { motion, useScroll } from 'framer-motion';
-import { education } from '@/constants';
 
 import { LiIcon } from '.';
 
-interface DetailsProps {
+interface Education {
   type: string;
   time: string;
   place: string;
   info: string;
 }
 
-const Details = ({ type, time, place, info }: DetailsProps) => {
+interface CourseProps {
+  details: Education;
+}
+interface EducationProps {
+  education: Education[];
+}
+
+const Course = ({ details }: CourseProps) => {
   const ref = useRef<HTMLLIElement>(null);
 
   return (
@@ -28,18 +34,20 @@ const Details = ({ type, time, place, info }: DetailsProps) => {
         transition={{ duration: 0.5, type: 'spring' }}
       >
         <h3 className="capitalize font-bold text-lg sm:text-xl md:text-2xl">
-          {type}{' '}
+          {details.type}{' '}
         </h3>
         <span className="capitalize font-medium text-dark/75 dark:text-light/75 text-sm sm:text-base">
-          {time} | {place}
+          {details.time} | {details.place}
         </span>
-        <p className="font-medium w-full text-sm sm:text-base">{info}</p>
+        <p className="font-medium w-full text-sm sm:text-base">
+          {details.info}
+        </p>
       </motion.div>
     </li>
   );
 };
 
-const Education = () => {
+const Education = ({ education }: EducationProps) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -61,13 +69,7 @@ const Education = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-2 sm:ml-4">
           {education.map((course, i) => (
-            <Details
-              key={i}
-              type={course.type}
-              time={course.time}
-              place={course.place}
-              info={course.info}
-            />
+            <Course key={i} details={course} />
           ))}
         </ul>
       </div>

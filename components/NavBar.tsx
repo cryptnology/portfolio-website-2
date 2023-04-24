@@ -38,11 +38,7 @@ const NavBar = () => {
         <Logo href="/" />
         <nav className="flex items-center justify-center">
           {socialLinks.map((link, i) => (
-            <MotionLink
-              key={i}
-              className={`mr-6 last:mr-0 ${link.width}`}
-              href={link.link}
-            >
+            <MotionLink key={i} className="mr-6 last:mr-0 w-7" href={link.link}>
               {<link.icon />}
             </MotionLink>
           ))}

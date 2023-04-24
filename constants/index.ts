@@ -9,41 +9,6 @@ import {
   chatGpt,
 } from '@/public/images';
 
-const experienceNumbers = [
-  {
-    number: 5,
-    title: 'Web2 Projects',
-  },
-  {
-    number: 3,
-    title: 'Web3 projects',
-  },
-  {
-    number: 1,
-    title: 'Years of experience',
-  },
-];
-
-const education = [
-  {
-    type: 'Bachelor of Science in Information Technology',
-    time: '2019-2021',
-    place: 'University Of Technology Sydney (UTS)',
-    info: 'Relevant courses included Web Systems, Applications Programming, Intro to Software Development and Cybersecurity.',
-  },
-];
-
-const experience = [
-  {
-    position: 'Software Engineer',
-    company: 'Serenade',
-    time: '2021-Present',
-    address: 'Sydney, AU',
-    work: 'Worked on a team responsible for developing new features for artists to sell music NFTs to their fans. This included building the Next.js website, user interfaces, using all the update best code practices and testing.',
-    companyLink: 'https://serenade.co',
-  },
-];
-
 const links = [
   {
     title: 'Home',
@@ -66,22 +31,18 @@ const links = [
 const socialLinks = [
   {
     link: 'https://twitter.com/CryptnologyDev',
-    width: 'w-6',
     icon: Twitter,
   },
   {
     link: 'https://www.youtube.com/channel/UC1ksb5e9FEqKB3Tl3NvaCIw',
-    width: 'w-7',
     icon: YouTube,
   },
   {
     link: 'https://github.com/cryptnology',
-    width: 'w-7',
     icon: GitHub,
   },
   {
     link: 'https://www.linkedin.com/in/jamie-anderson-121061200',
-    width: 'w-6',
     icon: LinkedIn,
   },
 ];
@@ -120,6 +81,38 @@ const aboutPage = {
       },
     ],
   },
+  experienceNumbers: [
+    {
+      number: 5,
+      title: 'Web2 Projects',
+    },
+    {
+      number: 3,
+      title: 'Web3 projects',
+    },
+    {
+      number: 1,
+      title: 'Years of experience',
+    },
+  ],
+  education: [
+    {
+      type: 'Bachelor of Science in Information Technology',
+      time: '2019-2021',
+      place: 'University Of Technology Sydney (UTS)',
+      info: 'Relevant courses included Web Systems, Applications Programming, Intro to Software Development and Cybersecurity.',
+    },
+  ],
+  experience: [
+    {
+      position: 'Software Engineer',
+      company: 'Serenade',
+      time: '2021-Present',
+      address: 'Sydney, AU',
+      work: 'Worked on a team responsible for developing new features for artists to sell music NFTs to their fans. This included building the Next.js website, user interfaces, using all the update best code practices and testing.',
+      companyLink: 'https://serenade.co',
+    },
+  ],
   metadata: {
     title: 'Cryptnology | About Me',
     description:
@@ -204,14 +197,4 @@ const learningPage = {
   },
 };
 
-export {
-  homePage,
-  aboutPage,
-  projectsPage,
-  learningPage,
-  experienceNumbers,
-  education,
-  experience,
-  links,
-  socialLinks,
-};
+export { homePage, aboutPage, projectsPage, learningPage, links, socialLinks };
