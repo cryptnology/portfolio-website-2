@@ -125,15 +125,15 @@ const aboutPage = {
   ],
   technologies: [
     {
-      name: 'TypeScript',
+      name: 'Typescript',
       icon: typescript,
     },
     {
-      name: 'React JS',
+      name: 'React.js',
       icon: reactjs,
     },
     {
-      name: 'Next JS',
+      name: 'Next.js',
       icon: nextjs,
     },
     {
@@ -141,19 +141,19 @@ const aboutPage = {
       icon: redux,
     },
     {
-      name: 'Tailwind CSS',
+      name: 'Tailwind',
       icon: tailwind,
     },
     {
-      name: 'Three JS',
+      name: 'Three.js',
       icon: threejs,
     },
     {
-      name: 'git',
+      name: 'Git',
       icon: git,
     },
     {
-      name: 'solidity',
+      name: 'Solidity',
       icon: solidity,
     },
   ],

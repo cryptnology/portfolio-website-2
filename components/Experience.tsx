@@ -64,7 +64,7 @@ const Experience = ({ experience }: ExperienceProps) => {
 
   return (
     <div className="w-full">
-      <h2 className="font-bold text-4xl md:text-6xl lg:text-8xl mb-16 md:mb-32 w-full text-center">
+      <h2 className="font-bold text-4xl md:text-6xl lg:text-8xl mb-16 md:mb-32 w-full text-center text-dark dark:text-light">
         Experience
       </h2>
       <div
