@@ -5,7 +5,6 @@ import {
   Container,
   Education,
   Experience,
-  Skills,
   Tech,
   TransitionEffect,
 } from '@/components';
@@ -65,7 +64,6 @@ const About = () => {
           </div>
           <Education education={aboutPage.education} />
           <Experience experience={aboutPage.experience} />
-          {/* <Skills /> */}
           <Tech technologies={aboutPage.technologies} />
         </main>
       </Container>

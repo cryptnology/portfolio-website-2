@@ -1,14 +1,11 @@
 export { default as blockchain } from './blockchain.png';
-export { default as css } from './css.png';
 export { default as chatGpt } from './chat-gpt.png';
 export { default as evmDevelopment } from './evm-development.png';
 export { default as figma } from './figma.png';
 export { default as filmpire } from './filmpire.png';
 export { default as git } from './git.png';
-export { default as html } from './html.png';
 export { default as javascript } from './javascript.png';
 export { default as nextjs } from './nextjs13.png';
-export { default as nodejs } from './nodejs.png';
 export { default as profileImg } from './profile-image.png';
 export { default as reactjs } from './reactjs.png';
 export { default as reactjs18 } from './reactjs18.jpg';
