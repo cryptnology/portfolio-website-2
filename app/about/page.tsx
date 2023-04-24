@@ -46,7 +46,7 @@ const About = () => {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
-            <div className="col-span-8 md:mt-10 xl:col-span-2 xl:flex-col xl:items-end flex items-center justify-between order-3">
+            <div className="col-span-8 md:mt-10 gap-x-4 xl:col-span-2 xl:flex-col xl:items-end flex items-center justify-between order-3">
               {aboutPage.experienceNumbers.map((experience, i) => (
                 <div
                   key={i}
