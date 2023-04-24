@@ -1,6 +1,7 @@
 // @ts-nocheck
 'use client';
 
+import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import {
   Decal,
@@ -9,6 +10,8 @@ import {
   Preload,
   useTexture,
 } from '@react-three/drei';
+
+import { CanvasLoader } from '.';
 
 interface BallCanvasProps {
   icon: StaticImageData;
@@ -48,8 +51,10 @@ const BallCanvas = ({ icon }: BallCanvasProps) => {
       dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
     >
-      <OrbitControls enableZoom={false} />
-      <Ball imgUrl={icon.src} />
+      <Suspense fallback={<CanvasLoader />}>
+        <OrbitControls enableZoom={false} />
+        <Ball imgUrl={icon.src} />
+      </Suspense>
 
       <Preload all />
     </Canvas>
