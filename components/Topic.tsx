@@ -6,7 +6,7 @@ import { StaticImageData } from 'next/image';
 
 import { MovingImage } from '.';
 
-export interface ArticleProps {
+export interface TopicProps {
   img: StaticImageData;
   title: string;
   time?: number;
@@ -15,7 +15,7 @@ export interface ArticleProps {
   date?: string;
 }
 
-const Article = ({ img, title, date, link }: ArticleProps) => {
+const Topic = ({ img, title, date, link }: TopicProps) => {
   return (
     <motion.li
       className="relative w-full p-4 py-6 mb-4 last:mb-0 rounded-xl flex flex-col md:flex-row items-center justify-between bg-light text-dark first:mt-0 border border-dark border-r-4 border-b-4 dark:bg-dark dark:border-light"
@@ -40,4 +40,4 @@ const Article = ({ img, title, date, link }: ArticleProps) => {
   );
 };
 
-export default Article;
+export default Topic;

@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
 import { MotionImage } from '.';
-import { ArticleProps } from './Article';
+import { TopicProps } from './Topic';
 
-const FeaturedArticle = ({ img, title, time, summary, link }: ArticleProps) => {
+const FeaturedTopic = ({ img, title, time, summary, link }: TopicProps) => {
   return (
     <li className="col-span-1 w-full p-4 bg-light border border-dark border-r-[12px] border-b-[12px] rounded-2xl relative dark:bg-dark dark:border-light">
       <Link
@@ -38,4 +38,4 @@ const FeaturedArticle = ({ img, title, time, summary, link }: ArticleProps) => {
   );
 };
 
-export default FeaturedArticle;
+export default FeaturedTopic;

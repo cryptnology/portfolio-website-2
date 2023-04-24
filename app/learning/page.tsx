@@ -1,8 +1,8 @@
 import {
   AnimatedText,
-  Article,
+  Topic,
   Container,
-  FeaturedArticle,
+  FeaturedTopic,
   TransitionEffect,
 } from '@/components';
 import { learningPage } from '@/constants';
@@ -20,28 +20,28 @@ const Learning = () => {
             text={learningPage.heading}
           />
           <ul className="grid grid-cols-1 lg:grid-cols-2 lg:gap-y-16 gap-8 xl:gap-16">
-            {learningPage.featuredArticles.map((article, i) => (
-              <FeaturedArticle
+            {learningPage.featuredTopics.map((topic, i) => (
+              <FeaturedTopic
                 key={i}
-                title={article.title}
-                summary={article.summary}
-                time={article.time}
-                link={article.link}
-                img={article.img}
+                title={topic.title}
+                summary={topic.summary}
+                time={topic.time}
+                link={topic.link}
+                img={topic.img}
               />
             ))}
           </ul>
           <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">
-            {learningPage.articlesHeading}
+            {learningPage.topicsHeading}
           </h2>
           <ul className="w-full">
-            {learningPage.articles.map((article, i) => (
-              <Article
+            {learningPage.topics.map((topic, i) => (
+              <Topic
                 key={i}
-                title={article.title}
-                img={article.img}
-                date={article.date}
-                link={article.link}
+                title={topic.title}
+                img={topic.img}
+                date={topic.date}
+                link={topic.link}
               />
             ))}
           </ul>

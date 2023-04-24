@@ -140,8 +140,8 @@ const projectsPage = {
 
 const learningPage = {
   heading: 'Knowledge is power!',
-  articlesHeading: 'All videos',
-  featuredArticles: [
+  topicsHeading: 'All topics',
+  featuredTopics: [
     {
       title: 'Next.js 13 - The basics',
       summary: 'Learn about all the new features in Next.js version 13.',
@@ -173,7 +173,7 @@ const learningPage = {
       img: blockchain,
     },
   ],
-  articles: [
+  topics: [
     {
       title:
         'Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling',
