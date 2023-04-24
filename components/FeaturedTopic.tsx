@@ -3,7 +3,14 @@ import Link from 'next/link';
 import { MotionImage } from '.';
 import { TopicProps } from './Topic';
 
-const FeaturedTopic = ({ img, title, time, summary, link }: TopicProps) => {
+const FeaturedTopic = ({
+  img,
+  title,
+  amount,
+  summary,
+  link,
+  amountText = 'min watch',
+}: TopicProps) => {
   return (
     <li className="col-span-1 w-full p-4 bg-light border border-dark border-r-[12px] border-b-[12px] rounded-2xl relative dark:bg-dark dark:border-light">
       <Link
@@ -32,7 +39,7 @@ const FeaturedTopic = ({ img, title, time, summary, link }: TopicProps) => {
         </p>
       </div>
       <div className="text-primary text-sm sm:text-base dark:text-primaryDark font-semibold absolute bottom-3">
-        {time} min watch
+        {amount} {amountText}
       </div>
     </li>
   );

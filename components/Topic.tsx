@@ -9,13 +9,19 @@ import { MovingImage } from '.';
 export interface TopicProps {
   img: StaticImageData;
   title: string;
-  time?: number;
+  amount: number;
   summary?: string;
   link: string;
-  date?: string;
+  amountText?: string;
 }
 
-const Topic = ({ img, title, date, link }: TopicProps) => {
+const Topic = ({
+  img,
+  title,
+  amount,
+  link,
+  amountText = ' min watch',
+}: TopicProps) => {
   return (
     <motion.li
       className="relative w-full p-4 py-6 mb-4 last:mb-0 rounded-xl flex flex-col md:flex-row items-center justify-between bg-light text-dark first:mt-0 border border-dark border-r-4 border-b-4 dark:bg-dark dark:border-light"
@@ -34,7 +40,8 @@ const Topic = ({ img, title, date, link }: TopicProps) => {
       </Link>
       <MovingImage img={img} title={title} link={link} />
       <span className="text-primary text-sm sm:text-base dark:text-primaryDark font-semibold md:pl-4 self-start md:self-center min-w-max">
-        {date}
+        {amount}
+        {amountText}
       </span>
     </motion.li>
   );

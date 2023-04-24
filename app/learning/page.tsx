@@ -25,7 +25,7 @@ const Learning = () => {
                 key={i}
                 title={topic.title}
                 summary={topic.summary}
-                time={topic.time}
+                amount={topic.amount}
                 link={topic.link}
                 img={topic.img}
               />
@@ -40,7 +40,8 @@ const Learning = () => {
                 key={i}
                 title={topic.title}
                 img={topic.img}
-                date={topic.date}
+                amount={topic.amount}
+                amountText={topic.amountText}
                 link={topic.link}
               />
             ))}
