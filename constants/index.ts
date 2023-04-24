@@ -8,7 +8,6 @@ import {
   evmDevelopment,
   chatGpt,
   git,
-  javascript,
   reactjs,
   redux,
   tailwind,
@@ -16,6 +15,8 @@ import {
   typescript,
   solidity,
   nextjs,
+  nftCardGame,
+  gameHub,
 } from '@/public/images';
 
 const links = [
@@ -92,11 +93,11 @@ const aboutPage = {
   },
   experienceNumbers: [
     {
-      number: 5,
+      number: 2,
       title: 'Web2 Projects',
     },
     {
-      number: 3,
+      number: 1,
       title: 'Web3 projects',
     },
     {
@@ -174,6 +175,20 @@ const projectsPage = {
       img: filmpire,
       link: 'https://filmpire-omega.vercel.app',
       github: 'https://github.com/cryptnology/filmpire',
+    },
+    {
+      type: 'Project',
+      title: 'NFT Card Battle Game',
+      img: nftCardGame,
+      link: 'https://nft-card-game-lac.vercel.app',
+      github: 'https://github.com/cryptnology/nft-card-game',
+    },
+    {
+      type: 'Project',
+      title: 'GameHub',
+      img: gameHub,
+      link: 'https://game-hub-ruddy.vercel.app/',
+      github: 'https://github.com/cryptnology/game-hub',
     },
   ],
   metadata: {
