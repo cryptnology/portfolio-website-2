@@ -2,11 +2,22 @@ import { GitHub, LinkedIn, Twitter, YouTube } from '@/Icons';
 import {
   filmpire,
   nextjs,
-  reactjs,
+  reactjs18,
   web3,
   blockchain,
   evmDevelopment,
   chatGpt,
+  html,
+  css,
+  figma,
+  git,
+  javascript,
+  nodejs,
+  reactjs,
+  redux,
+  tailwind,
+  threejs,
+  typescript,
 } from '@/public/images';
 
 const links = [
@@ -113,6 +124,52 @@ const aboutPage = {
       companyLink: 'https://serenade.co',
     },
   ],
+  technologies: [
+    {
+      name: 'HTML 5',
+      icon: html,
+    },
+    {
+      name: 'CSS 3',
+      icon: css,
+    },
+    {
+      name: 'JavaScript',
+      icon: javascript,
+    },
+    {
+      name: 'TypeScript',
+      icon: typescript,
+    },
+    {
+      name: 'React JS',
+      icon: reactjs,
+    },
+    {
+      name: 'Redux Toolkit',
+      icon: redux,
+    },
+    {
+      name: 'Tailwind CSS',
+      icon: tailwind,
+    },
+    {
+      name: 'Node JS',
+      icon: nodejs,
+    },
+    {
+      name: 'Three JS',
+      icon: threejs,
+    },
+    {
+      name: 'git',
+      icon: git,
+    },
+    {
+      name: 'figma',
+      icon: figma,
+    },
+  ],
   metadata: {
     title: 'Cryptnology | About Me',
     description:
@@ -155,7 +212,7 @@ const learningPage = {
       summary: 'Learn about all the new features in React.js version 18.',
       amount: 15,
       link: 'https://www.youtube.com/watch?v=bCZVos-yZXw',
-      img: reactjs,
+      img: reactjs18,
     },
     {
       title: 'What is Web 3.0?',

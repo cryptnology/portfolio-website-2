@@ -6,6 +6,7 @@ import {
   Education,
   Experience,
   Skills,
+  Tech,
   TransitionEffect,
 } from '@/components';
 import { profileImg } from '@/public/images';
@@ -64,7 +65,8 @@ const About = () => {
           </div>
           <Education education={aboutPage.education} />
           <Experience experience={aboutPage.experience} />
-          <Skills />
+          {/* <Skills /> */}
+          <Tech technologies={aboutPage.technologies} />
         </main>
       </Container>
     </>

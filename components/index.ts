@@ -16,6 +16,7 @@ export { default as Logo } from './Logo';
 export { default as Project } from './Project';
 export { default as Providers } from './Providers';
 export { default as Skills } from './Skills';
+export { default as Tech } from './Tech';
 export { default as ToggleThemeButton } from './ToggleThemeButton';
 export { default as Topic } from './Topic';
 export { default as TransitionEffect } from './TransitionEffect';
