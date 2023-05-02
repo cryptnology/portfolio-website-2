@@ -17,6 +17,7 @@ import {
   nextjs,
   nftCardGame,
   gameHub,
+  clickBuy,
 } from '@/public/images';
 
 const links = [
@@ -189,6 +190,15 @@ const projectsPage = {
       img: gameHub,
       link: 'https://game-hub-ruddy.vercel.app/',
       github: 'https://github.com/cryptnology/game-hub',
+    },
+    {
+      type: 'Featured Project',
+      title: "Click 'n' Buy",
+      summary:
+        'A mock store app where you can sign in via your own Goggle account, add products to your shopping cart and buy products using Stripe. All fully responsive with the choice of using a dark or light theme. The app is built using Next.js 13, Zustand, Postgres database, Daisy UI, Next Auth and Stripe.',
+      img: clickBuy,
+      link: 'https://ecommerce-app-sigma-seven.vercel.app',
+      github: 'https://github.com/cryptnology/ecommerce-app',
     },
   ],
   metadata: {

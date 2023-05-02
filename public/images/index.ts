@@ -1,5 +1,6 @@
 export { default as blockchain } from './blockchain.png';
 export { default as chatGpt } from './chat-gpt.png';
+export { default as clickBuy } from './click-n-buy.png';
 export { default as evmDevelopment } from './evm-development.png';
 export { default as filmpire } from './filmpire.png';
 export { default as gameHub } from './game-hub.png';

@@ -11,6 +11,10 @@ import { isOdd } from '@/utils';
 export const metadata = projectsPage.metadata;
 
 const Projects = () => {
+  const projects = projectsPage.projects.filter(
+    (project) => project.type === 'Project',
+  );
+
   return (
     <>
       <TransitionEffect />
@@ -20,17 +24,17 @@ const Projects = () => {
             className="mb-8 !text-4xl sm:mb-16 sm:!text-6xl lg:!text-7xl"
             text={projectsPage.heading}
           />
-          <div className="w-full grid grid-col-12 gap-24 gap-y-24 md:gap-y-32 gap-x-0 lg:gap-x-8 xl:gap-x-16">
+          <div className="w-full grid grid-cols-12 gap-24 gap-y-24 md:gap-y-32 gap-x-0 lg:gap-x-8 xl:gap-x-16">
             {projectsPage.projects.map((project, i) => (
               <div
                 key={i}
                 className={`col-span-12 ${
                   !project?.summary &&
-                  !isOdd(projectsPage.projects.length) &&
+                  isOdd(projects.length) &&
                   'xl:w-[650px] xl:mx-auto'
                 } ${
                   !project?.summary &&
-                  isOdd(projectsPage.projects.length) &&
+                  !isOdd(projects.length) &&
                   'lg:col-span-6'
                 }`}
               >
