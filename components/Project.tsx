@@ -11,9 +11,10 @@ export interface ProjectProps {
   img: StaticImageData;
   link: string;
   github: string;
+  demo: string;
 }
 
-const Project = ({ type, title, img, link, github }: ProjectProps) => {
+const Project = ({ type, title, img, link, github, demo }: ProjectProps) => {
   return (
     <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-r-[12px] border-b-[12px] border-dark bg-light p-4 sm:p-6 relative dark:bg-dark dark:border-light">
       <Link
@@ -46,6 +47,15 @@ const Project = ({ type, title, img, link, github }: ProjectProps) => {
               title="Visit"
               className="text-base md:text-lg font-semibold text-dark dark:text-light cursor-default lg:cursor-pointer"
               href={link}
+              target="_blank"
+              underline
+            />
+          </div>
+          <div>
+            <CustomLink
+              title="Demo"
+              className="text-base md:text-lg font-semibold text-dark dark:text-light cursor-default lg:cursor-pointer"
+              href={demo}
               target="_blank"
               underline
             />

@@ -46,6 +46,7 @@ const Projects = () => {
                     type={project.type}
                     img={project.img}
                     github={project.github}
+                    demo={project.demo}
                   />
                 ) : (
                   <Project
@@ -54,6 +55,7 @@ const Projects = () => {
                     type={project.type}
                     img={project.img}
                     github={project.github}
+                    demo={project.demo}
                   />
                 )}
               </div>
