@@ -95,15 +95,15 @@ const aboutPage = {
   },
   experienceNumbers: [
     {
-      number: 2,
+      number: 3,
       title: 'Web2 Projects',
     },
     {
-      number: 1,
+      number: 2,
       title: 'Web3 projects',
     },
     {
-      number: 1,
+      number: 2,
       title: 'Years of experience',
     },
   ],
