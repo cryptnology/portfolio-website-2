@@ -1,8 +1,11 @@
+'use client';
+
+import { useState } from 'react';
 import Link from 'next/link';
 import { StaticImageData } from 'next/image';
 import { GitHub } from '@/Icons';
 
-import { CustomLink, MotionImage, MotionLink } from '.';
+import { CustomLink, MotionImage, MotionLink, VideoModal } from '.';
 
 export interface ProjectProps {
   type: string;
@@ -15,6 +18,8 @@ export interface ProjectProps {
 }
 
 const Project = ({ type, title, img, link, github, demo }: ProjectProps) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-r-[12px] border-b-[12px] border-dark bg-light p-4 sm:p-6 relative dark:bg-dark dark:border-light">
       <Link
@@ -53,13 +58,17 @@ const Project = ({ type, title, img, link, github, demo }: ProjectProps) => {
           </div>
           {demo && (
             <div>
-              <CustomLink
+              <button
                 title="Demo"
-                className="text-base md:text-lg font-semibold text-dark dark:text-light cursor-default lg:cursor-pointer"
-                href={demo}
-                target="_blank"
-                underline
-              />
+                className="text-base md:text-lg font-semibold text-dark dark:text-light cursor-default lg:cursor-pointer relative group"
+                onClick={() => setIsOpen(true)}
+              >
+                Demo
+                <div
+                  className={`h-[1px] inline-block bg-dark dark:bg-light absolute left-0 -bottom-0.5 w-full group-hover:w-0 transition-[width] ease duration-300$`}
+                />
+              </button>
+              <VideoModal isOpen={isOpen} setIsOpen={setIsOpen} link={demo} />
             </div>
           )}
           <MotionLink

@@ -24,3 +24,4 @@ export { default as MotionImage } from './MotionImage';
 export { default as MotionLink } from './MotionLink';
 export { default as MovingImage } from './MovingImage';
 export { default as NavBar } from './NavBar';
+export { default as VideoModal } from './VideoModal';

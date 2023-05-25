@@ -177,7 +177,7 @@ const projectsPage = {
       img: filmpire,
       link: 'https://filmpire-omega.vercel.app',
       github: 'https://github.com/cryptnology/filmpire',
-      demo: 'https://youtu.be/oFVDiNYIR08',
+      demo: 'oFVDiNYIR08',
     },
     {
       type: 'Project',

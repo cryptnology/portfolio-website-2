@@ -1,7 +1,10 @@
+'use client';
+
+import { useState } from 'react';
 import Link from 'next/link';
 import { GitHub } from '@/Icons';
 
-import { MotionImage, MotionLink } from '.';
+import { MotionImage, MotionLink, VideoModal } from '.';
 import { ProjectProps } from './Project';
 
 const FeaturedProject = ({
@@ -13,6 +16,8 @@ const FeaturedProject = ({
   github,
   demo,
 }: ProjectProps) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <article className="w-full flex items-center justify-between rounded-3xl border border-dark border-r-[12px] border-b-[12px] bg-light p-4 lg:p-10 xl:p-8 relative rounded-br-3xl dark:bg-dark dark:border-light flex-col xl:flex-row ">
       <Link
@@ -59,13 +64,15 @@ const FeaturedProject = ({
             Visit Project
           </Link>
           {demo && (
-            <Link
-              className="ml-4 rounded-lg bg-dark text-light p-1.5 px-4 sm:px-6 text-base sm:text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light transition-colors"
-              href={demo}
-              target="_blank"
-            >
-              Demo
-            </Link>
+            <>
+              <button
+                className="ml-4 rounded-lg bg-dark text-light p-1.5 px-4 sm:px-6 text-base sm:text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light transition-colors"
+                onClick={() => setIsOpen(true)}
+              >
+                Demo
+              </button>
+              <VideoModal isOpen={isOpen} setIsOpen={setIsOpen} link={demo} />
+            </>
           )}
         </div>
       </div>
