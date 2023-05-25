@@ -31,6 +31,11 @@ const Topic = ({
       whileInView={{ y: 0, transition: { duration: 0.5, ease: 'easeInOut' } }}
       viewport={{ once: true }}
     >
+      <div className="lg:hidden" onClick={() => setIsOpen(true)}>
+        <h2 className="capitalize text-lg sm:text-xl font-semibold hover:underline underline-offset-2 text-dark dark:text-light">
+          {title}
+        </h2>
+      </div>
       <MovingImage
         isOpen={isOpen}
         setIsOpen={setIsOpen}
