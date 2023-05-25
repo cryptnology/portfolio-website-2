@@ -18,6 +18,7 @@ import {
   nftCardGame,
   gameHub,
   clickBuy,
+  novusDex,
 } from '@/public/images';
 
 const links = [
@@ -199,6 +200,15 @@ const projectsPage = {
       img: clickBuy,
       link: 'https://ecommerce-app-sigma-seven.vercel.app',
       github: 'https://github.com/cryptnology/ecommerce-app',
+    },
+    {
+      type: 'Featured Project',
+      title: 'Novus Dex',
+      summary:
+        'A decentralised cryptocurrency exchange on the Goerli ethereum test network, where you can deposit, withdraw, make buy and sell orders, with mock tokens. All fully responsive with the choice of using a dark or light theme. The app is built using React, Zustand, Hardhat, Apex Charts, Framer Motion, Tailwind and coded in TypeScript.',
+      img: novusDex,
+      link: 'https://novus-dex-vite.vercel.app',
+      github: 'https://github.com/cryptnology/novus-dex-vite',
     },
   ],
   metadata: {
