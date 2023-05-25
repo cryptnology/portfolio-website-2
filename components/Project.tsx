@@ -51,15 +51,17 @@ const Project = ({ type, title, img, link, github, demo }: ProjectProps) => {
               underline
             />
           </div>
-          <div>
-            <CustomLink
-              title="Demo"
-              className="text-base md:text-lg font-semibold text-dark dark:text-light cursor-default lg:cursor-pointer"
-              href={demo}
-              target="_blank"
-              underline
-            />
-          </div>
+          {demo && (
+            <div>
+              <CustomLink
+                title="Demo"
+                className="text-base md:text-lg font-semibold text-dark dark:text-light cursor-default lg:cursor-pointer"
+                href={demo}
+                target="_blank"
+                underline
+              />
+            </div>
+          )}
           <MotionLink
             className="w-6 md:w-8 cursor-default lg:cursor-pointer"
             href={github}

@@ -177,7 +177,7 @@ const projectsPage = {
       img: filmpire,
       link: 'https://filmpire-omega.vercel.app',
       github: 'https://github.com/cryptnology/filmpire',
-      demo: '/',
+      demo: 'https://youtu.be/oFVDiNYIR08',
     },
     {
       type: 'Project',
@@ -185,7 +185,7 @@ const projectsPage = {
       img: nftCardGame,
       link: 'https://nft-card-game-lac.vercel.app',
       github: 'https://github.com/cryptnology/nft-card-game',
-      demo: '/',
+      demo: '',
     },
     {
       type: 'Project',
@@ -193,7 +193,7 @@ const projectsPage = {
       img: gameHub,
       link: 'https://game-hub-ruddy.vercel.app/',
       github: 'https://github.com/cryptnology/game-hub',
-      demo: '/',
+      demo: '',
     },
     {
       type: 'Featured Project',
@@ -203,7 +203,7 @@ const projectsPage = {
       img: clickBuy,
       link: 'https://ecommerce-app-sigma-seven.vercel.app',
       github: 'https://github.com/cryptnology/ecommerce-app',
-      demo: '/',
+      demo: '',
     },
     {
       type: 'Featured Project',
@@ -213,7 +213,7 @@ const projectsPage = {
       img: novusDex,
       link: 'https://novus-dex-vite.vercel.app',
       github: 'https://github.com/cryptnology/novus-dex-vite',
-      demo: '/',
+      demo: '',
     },
   ],
   metadata: {

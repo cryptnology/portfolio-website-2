@@ -58,13 +58,15 @@ const FeaturedProject = ({
           >
             Visit Project
           </Link>
-          <Link
-            className="ml-4 rounded-lg bg-dark text-light p-1.5 px-4 sm:px-6 text-base sm:text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light transition-colors"
-            href={demo}
-            target="_blank"
-          >
-            Demo
-          </Link>
+          {demo && (
+            <Link
+              className="ml-4 rounded-lg bg-dark text-light p-1.5 px-4 sm:px-6 text-base sm:text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light transition-colors"
+              href={demo}
+              target="_blank"
+            >
+              Demo
+            </Link>
+          )}
         </div>
       </div>
     </article>
