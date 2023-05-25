@@ -230,14 +230,14 @@ const learningPage = {
       title: 'Next.js 13 - The basics',
       summary: 'Learn about all the new features in Next.js version 13.',
       amount: 9,
-      link: 'https://www.youtube.com/watch?v=__mSgDEOyv8',
+      link: '__mSgDEOyv8',
       img: nextjs13,
     },
     {
       title: 'React.js 18 - Migrating from v17 or v16',
       summary: 'Learn about all the new features in React.js version 18.',
       amount: 15,
-      link: 'https://www.youtube.com/watch?v=bCZVos-yZXw',
+      link: 'bCZVos-yZXw',
       img: reactjs18,
     },
     {
@@ -245,7 +245,7 @@ const learningPage = {
       summary:
         'Learn about Web 3.0 and how it differs from the past versions of the internet.',
       amount: 9,
-      link: 'https://www.youtube.com/watch?v=nHhAEkG1y2U',
+      link: 'nHhAEkG1y2U',
       img: web3,
     },
     {
@@ -253,7 +253,7 @@ const learningPage = {
       summary:
         'Learn what is a blockchain, how do they work and why blockchains are so special.',
       amount: 6,
-      link: 'https://www.youtube.com/watch?v=SSo_EIwHSd4',
+      link: 'SSo_EIwHSd4',
       img: blockchain,
     },
   ],
@@ -263,14 +263,14 @@ const learningPage = {
         'Learn about EVM-based Blockchain Development in this great playlist that covers all of the relevant topics you need to know.',
       amount: 35,
       amountText: '+ videos',
-      link: 'https://www.youtube.com/watch?v=XTbd5w0AXc4&list=PLvfQp12V0hS1LmcDq23mdocEaMVHtp_IK',
+      link: 'XTbd5w0AXc4',
       img: evmDevelopment,
     },
     {
       title:
         'Learn how to build a full decentralised app (DApp) using ChatGPT. Great introduction into ChatGPT and DApps.',
       amount: 20,
-      link: 'https://www.youtube.com/watch?v=i_a9bqvqmzo',
+      link: 'i_a9bqvqmzo',
       img: chatGpt,
     },
   ],

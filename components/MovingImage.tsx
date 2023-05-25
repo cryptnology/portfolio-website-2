@@ -1,18 +1,19 @@
 'use client';
 
 import { useRef } from 'react';
-import Link from 'next/link';
 import { StaticImageData } from 'next/image';
 import { useMotionValue } from 'framer-motion';
-import { MotionImage } from '.';
+import { MotionImage, VideoModal } from '.';
 
 interface Props {
   img: StaticImageData;
   title: string;
   link: string;
+  isOpen: boolean;
+  setIsOpen: (value: boolean) => void;
 }
 
-const MovingImage = ({ img, title, link }: Props) => {
+const MovingImage = ({ img, title, link, isOpen, setIsOpen }: Props) => {
   const ref = useRef<HTMLImageElement>(null);
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -30,12 +31,11 @@ const MovingImage = ({ img, title, link }: Props) => {
   };
 
   return (
-    <Link
-      className="hidden lg:block"
-      href={link}
-      target="_blank"
+    <div
+      className="hidden lg:block lg:cursor-pointer"
       onMouseMove={handleMouse}
       onMouseLeave={handleMouseLeave}
+      onClick={() => setIsOpen(true)}
     >
       <h2 className="capitalize text-lg sm:text-xl font-semibold hover:underline underline-offset-2 text-dark dark:text-light">
         {title}
@@ -49,7 +49,8 @@ const MovingImage = ({ img, title, link }: Props) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1, transition: { duration: 0.2 } }}
       />
-    </Link>
+      <VideoModal isOpen={isOpen} setIsOpen={setIsOpen} link={link} />
+    </div>
   );
 };
 
