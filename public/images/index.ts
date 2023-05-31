@@ -10,6 +10,7 @@ export { default as nextjs } from './nextjs.png';
 export { default as nextjs13 } from './nextjs13.png';
 export { default as nftCardGame } from './nft-card-game.png';
 export { default as novusDex } from './novus-dex.png';
+export { default as pickMix } from './pick-n-mix.png';
 export { default as profileImg } from './profile-image.png';
 export { default as reactjs } from './reactjs.png';
 export { default as reactjs18 } from './reactjs18.jpg';

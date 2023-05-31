@@ -19,6 +19,7 @@ import {
   gameHub,
   clickBuy,
   novusDex,
+  pickMix,
 } from '@/public/images';
 
 const links = [
@@ -197,22 +198,30 @@ const projectsPage = {
     },
     {
       type: 'Featured Project',
-      title: "Click 'n' Buy",
-      summary:
-        'A mock store app where you can sign in via your own Goggle account, add products to your shopping cart and buy products using Stripe. All fully responsive with the choice of using a dark or light theme. The app is built using Next.js 13, Zustand, Postgres database, Daisy UI, Next Auth and Stripe.',
-      img: clickBuy,
-      link: 'https://ecommerce-app-sigma-seven.vercel.app',
-      github: 'https://github.com/cryptnology/ecommerce-app',
-      demo: '',
-    },
-    {
-      type: 'Featured Project',
       title: 'Novus Dex',
       summary:
         'A decentralised cryptocurrency exchange on the Goerli ethereum test network, where you can deposit, withdraw, make buy and sell orders, with mock tokens. All fully responsive with the choice of using a dark or light theme. The app is built using React, Zustand, Hardhat, Apex Charts, Framer Motion, Tailwind and coded in TypeScript.',
       img: novusDex,
       link: 'https://novus-dex-vite.vercel.app',
       github: 'https://github.com/cryptnology/novus-dex-vite',
+      demo: '',
+    },
+    {
+      type: 'Project',
+      title: "Click 'n' Buy",
+      summary: '',
+      img: clickBuy,
+      link: 'https://ecommerce-app-sigma-seven.vercel.app',
+      github: 'https://github.com/cryptnology/ecommerce-app',
+      demo: '',
+    },
+    {
+      type: 'Project',
+      title: "Pick 'n' Mix",
+      summary: '',
+      img: pickMix,
+      link: 'https://tshirt-threejs.vercel.app',
+      github: 'https://github.com/cryptnology/tshirt-threejs',
       demo: '',
     },
   ],
