@@ -6,7 +6,7 @@ import { useMotionValue } from 'framer-motion';
 import { MotionImage, VideoModal } from '.';
 
 interface Props {
-  img: StaticImageData;
+  img: string | StaticImageData;
   title: string;
   link: string;
   isOpen: boolean;

@@ -7,7 +7,7 @@ import { StaticImageData } from 'next/image';
 import { MovingImage, VideoModal } from '.';
 
 export interface TopicProps {
-  img: StaticImageData;
+  img: string | StaticImageData;
   title: string;
   amount: number;
   summary?: string;
