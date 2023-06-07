@@ -194,7 +194,7 @@ const projectsPage = {
       img: gameHub,
       link: 'https://game-hub-ruddy.vercel.app/',
       github: 'https://github.com/cryptnology/game-hub',
-      demo: '',
+      demo: 'u7ZVnRcIt1I',
     },
     {
       type: 'Featured Project',
@@ -204,7 +204,7 @@ const projectsPage = {
       img: novusDex,
       link: 'https://novus-dex-vite.vercel.app',
       github: 'https://github.com/cryptnology/novus-dex-vite',
-      demo: '',
+      demo: 'wtlPvjpizeA',
     },
     {
       type: 'Project',
@@ -213,7 +213,7 @@ const projectsPage = {
       img: clickBuy,
       link: 'https://ecommerce-app-sigma-seven.vercel.app',
       github: 'https://github.com/cryptnology/ecommerce-app',
-      demo: '',
+      demo: 'tRIByfp0X-4',
     },
     {
       type: 'Project',
@@ -222,7 +222,7 @@ const projectsPage = {
       img: pickMix,
       link: 'https://tshirt-threejs.vercel.app',
       github: 'https://github.com/cryptnology/tshirt-threejs',
-      demo: '',
+      demo: 'rIfIhD4JliA',
     },
   ],
   metadata: {
