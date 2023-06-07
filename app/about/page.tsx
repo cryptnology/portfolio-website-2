@@ -8,6 +8,7 @@ import {
   Tech,
   TransitionEffect,
 } from '@/components';
+import { profileImg } from '@/public/images';
 import { aboutPage } from '@/constants';
 
 export const metadata = aboutPage.metadata;
@@ -39,10 +40,8 @@ const About = () => {
             <div className="col-span-8 md:col-span-5 lg:col-span-4 xl:col-span-3 relative h-max rounded-3xl border-2 border-r-[10px] border-b-[10px] border-dark bg-light p-8 dark:bg-dark dark:border-light order-1 md:order-2">
               <Image
                 className="w-full h-auto rounded-2xl"
-                src={aboutPage.profileImg}
+                src={profileImg}
                 alt="Cryptnology"
-                height={600}
-                width={600}
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />

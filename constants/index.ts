@@ -1,5 +1,12 @@
 import { GitHub, LinkedIn, Twitter, YouTube } from '@/Icons';
 import {
+  filmpire,
+  nextjs13,
+  reactjs18,
+  web3,
+  blockchain,
+  evmDevelopment,
+  chatGpt,
   git,
   reactjs,
   redux,
@@ -8,6 +15,11 @@ import {
   typescript,
   solidity,
   nextjs,
+  nftCardGame,
+  gameHub,
+  clickBuy,
+  novusDex,
+  pickMix,
 } from '@/public/images';
 
 const links = [
@@ -65,8 +77,6 @@ const homePage = {
 
 const aboutPage = {
   heading: 'Building the Future Web!',
-  profileImg:
-    'https://res.cloudinary.com/dmhu2ksdk/image/upload/v1686135004/profile-image_ya7k0v.png',
   aboutMe: {
     heading: 'About me',
     paragraphs: [
@@ -165,7 +175,7 @@ const projectsPage = {
       title: 'Filmpire',
       summary:
         'An AI powered movie app that allows you to search for the latest movies via categories, genres or a search bar and is fully responsive with the choice of using a dark or light theme. You can also create / log in to your profile where can see all your favourite and watchlisted movies. The app is built using React, Redux, React Router, Alan AI, Axios, Material UI and the TMDB API.',
-      img: 'https://res.cloudinary.com/dmhu2ksdk/image/upload/v1686131432/filmpire_shggid.png',
+      img: filmpire,
       link: 'https://filmpire-omega.vercel.app',
       github: 'https://github.com/cryptnology/filmpire',
       demo: 'oFVDiNYIR08',
@@ -173,7 +183,7 @@ const projectsPage = {
     {
       type: 'Project',
       title: 'NFT Card Battle Game',
-      img: 'https://res.cloudinary.com/dmhu2ksdk/image/upload/v1686131431/nft-card-game_jxgvr0.png',
+      img: nftCardGame,
       link: 'https://nft-card-game-lac.vercel.app',
       github: 'https://github.com/cryptnology/nft-card-game',
       demo: '',
@@ -181,7 +191,7 @@ const projectsPage = {
     {
       type: 'Project',
       title: 'GameHub',
-      img: 'https://res.cloudinary.com/dmhu2ksdk/image/upload/v1686131431/game-hub_ytz1na.png',
+      img: gameHub,
       link: 'https://game-hub-ruddy.vercel.app/',
       github: 'https://github.com/cryptnology/game-hub',
       demo: 'u7ZVnRcIt1I',
@@ -191,7 +201,7 @@ const projectsPage = {
       title: 'Novus Dex',
       summary:
         'A decentralised cryptocurrency exchange on the Goerli ethereum test network, where you can deposit, withdraw, make buy and sell orders, with mock tokens. All fully responsive with the choice of using a dark or light theme. The app is built using React, Zustand, Hardhat, Apex Charts, Framer Motion, Tailwind and coded in TypeScript.',
-      img: 'https://res.cloudinary.com/dmhu2ksdk/image/upload/v1686131429/novus-dex_fjbv1b.png',
+      img: novusDex,
       link: 'https://novus-dex-vite.vercel.app',
       github: 'https://github.com/cryptnology/novus-dex-vite',
       demo: 'wtlPvjpizeA',
@@ -200,7 +210,7 @@ const projectsPage = {
       type: 'Project',
       title: "Click 'n' Buy",
       summary: '',
-      img: 'https://res.cloudinary.com/dmhu2ksdk/image/upload/v1686131432/click-n-buy_h7ya5w.png',
+      img: clickBuy,
       link: 'https://ecommerce-app-sigma-seven.vercel.app',
       github: 'https://github.com/cryptnology/ecommerce-app',
       demo: 'tRIByfp0X-4',
@@ -209,7 +219,7 @@ const projectsPage = {
       type: 'Project',
       title: "Pick 'n' Mix",
       summary: '',
-      img: 'https://res.cloudinary.com/dmhu2ksdk/image/upload/v1686131431/pick-n-mix_gs6fr0.png',
+      img: pickMix,
       link: 'https://tshirt-threejs.vercel.app',
       github: 'https://github.com/cryptnology/tshirt-threejs',
       demo: 'rIfIhD4JliA',
@@ -230,14 +240,14 @@ const learningPage = {
       summary: 'Learn about all the new features in Next.js version 13.',
       amount: 9,
       link: '__mSgDEOyv8',
-      img: 'https://res.cloudinary.com/dmhu2ksdk/image/upload/v1686135513/nextjs13_gwvfxp.png',
+      img: nextjs13,
     },
     {
       title: 'React.js 18 - Migrating from v17 or v16',
       summary: 'Learn about all the new features in React.js version 18.',
       amount: 15,
       link: 'bCZVos-yZXw',
-      img: 'https://res.cloudinary.com/dmhu2ksdk/image/upload/v1686135513/reactjs18_jxhy5w.jpg',
+      img: reactjs18,
     },
     {
       title: 'What is Web 3.0?',
@@ -245,7 +255,7 @@ const learningPage = {
         'Learn about Web 3.0 and how it differs from the past versions of the internet.',
       amount: 9,
       link: 'nHhAEkG1y2U',
-      img: 'https://res.cloudinary.com/dmhu2ksdk/image/upload/v1686135513/web3_zlic06.png',
+      img: web3,
     },
     {
       title: 'How does a blockchain work?',
@@ -253,7 +263,7 @@ const learningPage = {
         'Learn what is a blockchain, how do they work and why blockchains are so special.',
       amount: 6,
       link: 'SSo_EIwHSd4',
-      img: 'https://res.cloudinary.com/dmhu2ksdk/image/upload/v1686135513/blockchain_wl8w4v.png',
+      img: blockchain,
     },
   ],
   topics: [
@@ -263,14 +273,14 @@ const learningPage = {
       amount: 35,
       amountText: '+ videos',
       link: 'XTbd5w0AXc4',
-      img: 'https://res.cloudinary.com/dmhu2ksdk/image/upload/v1686135513/evm-development_n8fade.png',
+      img: evmDevelopment,
     },
     {
       title:
         'Learn how to build a full decentralised app (DApp) using ChatGPT. Great introduction into ChatGPT and DApps.',
       amount: 20,
       link: 'i_a9bqvqmzo',
-      img: 'https://res.cloudinary.com/dmhu2ksdk/image/upload/v1686135514/chat-gpt_jqe7dl.png',
+      img: chatGpt,
     },
   ],
   metadata: {
