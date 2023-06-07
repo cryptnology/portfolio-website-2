@@ -11,7 +11,7 @@ export interface ProjectProps {
   type: string;
   title: string;
   summary?: string;
-  img: StaticImageData;
+  img: string | StaticImageData;
   link: string;
   github: string;
   demo: string;
@@ -31,6 +31,8 @@ const Project = ({ type, title, img, link, github, demo }: ProjectProps) => {
           className="w-full h-auto"
           src={img}
           alt={title}
+          width={600}
+          height={600}
           priority
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}

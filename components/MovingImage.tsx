@@ -43,6 +43,8 @@ const MovingImage = ({ img, title, link, isOpen, setIsOpen }: Props) => {
       <MotionImage
         ref={ref}
         className="z-10 w-96 h-auto hidden absolute rounded-lg border-2 border-transparent dark:border-light"
+        height={600}
+        width={600}
         style={{ x, y }}
         src={img}
         alt={title}
