@@ -9,17 +9,16 @@ import {
   chatGpt,
   git,
   reactjs,
-  redux,
   tailwind,
   threejs,
   typescript,
   solidity,
   nextjs,
-  nftCardGame,
   gameHub,
   clickBuy,
   novusDex,
   pickMix,
+  foundry,
 } from '@/public/images';
 
 const links = [
@@ -82,7 +81,7 @@ const aboutPage = {
     paragraphs: [
       {
         content:
-          "Hi, I'm Jamie, a web developer with a passion for creating beautiful, functional, and user-centered digital experiences. With over a years of experience in the field. I'am always looking for new and innovative ways to bring visions to life.",
+          "Hi, I'm Jamie, a software engineer and blockchain developer with a passion for creating beautiful, functional, and user-centered digital experiences. With over a years of experience in the field. I'am always looking for new and innovative ways to bring visions to life.",
       },
       {
         content:
@@ -96,12 +95,12 @@ const aboutPage = {
   },
   experienceNumbers: [
     {
-      number: 4,
-      title: 'Web2 Projects',
-    },
-    {
       number: 2,
       title: 'Web3 projects',
+    },
+    {
+      number: 4,
+      title: 'Web2 Projects',
     },
     {
       number: 2,
@@ -128,6 +127,14 @@ const aboutPage = {
   ],
   technologies: [
     {
+      name: 'Solidity',
+      icon: solidity,
+    },
+    {
+      name: 'Foundry',
+      icon: foundry,
+    },
+    {
       name: 'Typescript',
       icon: typescript,
     },
@@ -138,10 +145,6 @@ const aboutPage = {
     {
       name: 'Next.js',
       icon: nextjs,
-    },
-    {
-      name: 'Redux Toolkit',
-      icon: redux,
     },
     {
       name: 'Tailwind',
@@ -155,10 +158,6 @@ const aboutPage = {
       name: 'Git',
       icon: git,
     },
-    {
-      name: 'Solidity',
-      icon: solidity,
-    },
   ],
   metadata: {
     title: 'Cryptnology | About Me',
@@ -169,7 +168,9 @@ const aboutPage = {
 
 const projectsPage = {
   heading: 'Imagination transcends knowledge!',
-  projects: [
+  webTwoHeading: 'Web2 Projects',
+  webThreeHeading: 'Web3 Projects',
+  webTwoProjects: [
     {
       type: 'Featured Project',
       title: 'Filmpire',
@@ -179,32 +180,6 @@ const projectsPage = {
       link: 'https://filmpire-omega.vercel.app',
       github: 'https://github.com/cryptnology/filmpire',
       demo: 'oFVDiNYIR08',
-    },
-    {
-      type: 'Project',
-      title: 'NFT Card Battle Game',
-      img: nftCardGame,
-      link: 'https://nft-card-game-lac.vercel.app',
-      github: 'https://github.com/cryptnology/nft-card-game',
-      demo: '',
-    },
-    {
-      type: 'Project',
-      title: 'GameHub',
-      img: gameHub,
-      link: 'https://game-hub-ruddy.vercel.app/',
-      github: 'https://github.com/cryptnology/game-hub',
-      demo: 'u7ZVnRcIt1I',
-    },
-    {
-      type: 'Featured Project',
-      title: 'Novus Dex',
-      summary:
-        'A decentralised cryptocurrency exchange on the Goerli ethereum test network, where you can deposit, withdraw, make buy and sell orders, with mock tokens. All fully responsive with the choice of using a dark or light theme. The app is built using React, Zustand, Hardhat, Apex Charts, Framer Motion, Tailwind and coded in TypeScript.',
-      img: novusDex,
-      link: 'https://novus-dex-vite.vercel.app',
-      github: 'https://github.com/cryptnology/novus-dex-vite',
-      demo: 'wtlPvjpizeA',
     },
     {
       type: 'Project',
@@ -223,6 +198,28 @@ const projectsPage = {
       link: 'https://tshirt-threejs.vercel.app',
       github: 'https://github.com/cryptnology/tshirt-threejs',
       demo: 'rIfIhD4JliA',
+    },
+    {
+      type: 'Featured Project',
+      title: 'GameHub',
+      summary:
+        'GameHub is a video game discovery web app that helps you find new and interesting games to play. With GameHub, you can search for games by platform, genre, and more.',
+      img: gameHub,
+      link: 'https://game-hub-ruddy.vercel.app/',
+      github: 'https://github.com/cryptnology/game-hub',
+      demo: 'u7ZVnRcIt1I',
+    },
+  ],
+  webThreeProjects: [
+    {
+      type: 'Featured Project',
+      title: 'Novus Dex',
+      summary:
+        'A decentralised cryptocurrency exchange on the Goerli ethereum test network, where you can deposit, withdraw, make buy and sell orders, with mock tokens. All fully responsive with the choice of using a dark or light theme. The app is built using React, Zustand, Hardhat, Apex Charts, Framer Motion, Tailwind and coded in TypeScript.',
+      img: novusDex,
+      link: 'https://novus-dex-vite.vercel.app',
+      github: 'https://github.com/cryptnology/novus-dex-vite',
+      demo: 'wtlPvjpizeA',
     },
   ],
   metadata: {
