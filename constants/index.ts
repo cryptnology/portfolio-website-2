@@ -19,6 +19,7 @@ import {
   novusDex,
   pickMix,
   foundry,
+  foundryProject,
 } from '@/public/images';
 
 const links = [
@@ -220,6 +221,13 @@ const projectsPage = {
       link: 'https://novus-dex-vite.vercel.app',
       github: 'https://github.com/cryptnology/novus-dex-vite',
       demo: 'wtlPvjpizeA',
+    },
+    {
+      type: 'Project',
+      title: 'Lottery Smart Contract',
+      img: foundryProject,
+      link: '',
+      github: 'https://github.com/cryptnology/lottery-smart-contract',
     },
   ],
   metadata: {

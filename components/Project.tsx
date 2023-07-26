@@ -14,7 +14,7 @@ export interface ProjectProps {
   img: StaticImageData;
   link: string;
   github: string;
-  demo: string;
+  demo?: string;
 }
 
 const Project = ({ type, title, img, link, github, demo }: ProjectProps) => {
@@ -24,7 +24,7 @@ const Project = ({ type, title, img, link, github, demo }: ProjectProps) => {
     <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-r-[12px] border-b-[12px] border-dark bg-light p-4 sm:p-6 relative dark:bg-dark dark:border-light">
       <Link
         className="w-full overflow-hidden rounded-lg cursor-default lg:cursor-pointer"
-        href={link}
+        href={link ? link : github}
         target="_blank"
       >
         <MotionImage
@@ -46,16 +46,22 @@ const Project = ({ type, title, img, link, github, demo }: ProjectProps) => {
             {title}
           </h2>
         </Link>
-        <div className="w-full mt-2 flex items-center justify-between">
-          <div>
-            <CustomLink
-              title="Visit"
-              className="text-base md:text-lg font-semibold text-dark dark:text-light cursor-default lg:cursor-pointer"
-              href={link}
-              target="_blank"
-              underline
-            />
-          </div>
+        <div
+          className={`w-full mt-2 flex items-center ${
+            !link && !demo ? 'justify-end' : 'justify-between'
+          }`}
+        >
+          {link && (
+            <div>
+              <CustomLink
+                title="Visit"
+                className="text-base md:text-lg font-semibold text-dark dark:text-light cursor-default lg:cursor-pointer"
+                href={link}
+                target="_blank"
+                underline
+              />
+            </div>
+          )}
           {demo && (
             <div>
               <button

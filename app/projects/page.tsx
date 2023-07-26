@@ -11,13 +11,12 @@ import { isOdd } from '@/utils';
 export const metadata = projectsPage.metadata;
 
 const Projects = () => {
-  const projects =
-    projectsPage.webTwoProjects.filter(
-      (project) => project.type === 'Project',
-    ) ||
-    projectsPage.webThreeProjects.filter(
-      (project) => project.type === 'Project',
-    );
+  const web2Projects = projectsPage.webTwoProjects.filter(
+    (project) => project.type === 'Project',
+  );
+  const web3Projects = projectsPage.webThreeProjects.filter(
+    (project) => project.type === 'Project',
+  );
 
   return (
     <>
@@ -37,11 +36,11 @@ const Projects = () => {
                 key={i}
                 className={`col-span-12 ${
                   !project?.summary &&
-                  isOdd(projects.length) &&
+                  isOdd(web3Projects.length) &&
                   'xl:w-[650px] xl:mx-auto'
                 } ${
                   !project?.summary &&
-                  !isOdd(projects.length) &&
+                  !isOdd(web3Projects.length) &&
                   'lg:col-span-6'
                 }`}
               >
@@ -77,11 +76,11 @@ const Projects = () => {
                 key={i}
                 className={`col-span-12 ${
                   !project?.summary &&
-                  isOdd(projects.length) &&
+                  isOdd(web2Projects.length) &&
                   'xl:w-[650px] xl:mx-auto'
                 } ${
                   !project?.summary &&
-                  !isOdd(projects.length) &&
+                  !isOdd(web2Projects.length) &&
                   'lg:col-span-6'
                 }`}
               >

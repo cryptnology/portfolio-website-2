@@ -4,6 +4,7 @@ export { default as clickBuy } from './click-n-buy.png';
 export { default as evmDevelopment } from './evm-development.png';
 export { default as filmpire } from './filmpire.png';
 export { default as foundry } from './foundry.png';
+export { default as foundryProject } from './foundry-project.png';
 export { default as gameHub } from './game-hub.png';
 export { default as git } from './git.png';
 export { default as javascript } from './javascript.png';
