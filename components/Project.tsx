@@ -41,7 +41,7 @@ const Project = ({ type, title, img, link, github, demo }: ProjectProps) => {
         <span className="text-primary dark:text-primaryDark font-medium text-base lg:text-lg xl:text-xl">
           {type}
         </span>
-        <Link href={link} target="_blank">
+        <Link href={link ? link : github} target="_blank">
           <h2 className="my-2 w-full text-left text-2xl lg:text-3xl font-bold text-dark dark:text-light hover:underline underline-offset-4 cursor-default lg:cursor-pointer lg:line-clamp-1 ">
             {title}
           </h2>
