@@ -234,7 +234,7 @@ const projectsPage = {
       type: 'Featured Project',
       title: 'CryptoStarter',
       summary:
-        'A Decentralised KickerStarter on the Sepolia ethereum test network, where you can create and donate to a campaign. All fully responsive with the choice of using a dark or light theme. The app is built using React, Zustand, Foundry, IPFS, Tailwind and coded in TypeScript.',
+        'A decentralised KickStarter on the Sepolia ethereum test network, where you can create and donate to a campaign. All fully responsive with the choice of using a dark or light theme. The app is built using React, Zustand, Foundry, IPFS, Tailwind and coded in TypeScript.',
       img: cryptoStarter,
       link: 'https://crypto-starter-vite.vercel.app',
       github: 'https://github.com/cryptnology/crypto-starter-vite',
