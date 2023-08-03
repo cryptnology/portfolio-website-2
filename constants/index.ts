@@ -97,7 +97,7 @@ const aboutPage = {
   },
   experienceNumbers: [
     {
-      number: 2,
+      number: 3,
       title: 'Web3 projects',
     },
     {
