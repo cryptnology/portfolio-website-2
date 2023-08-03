@@ -20,6 +20,7 @@ import {
   pickMix,
   foundry,
   foundryProject,
+  cryptoStarter,
 } from '@/public/images';
 
 const links = [
@@ -228,6 +229,16 @@ const projectsPage = {
       img: foundryProject,
       link: '',
       github: 'https://github.com/cryptnology/lottery-smart-contract',
+    },
+    {
+      type: 'Featured Project',
+      title: 'CryptoStarter',
+      summary:
+        'A Decentralised KickerStarter on the Sepolia ethereum test network, where you can create and donate to a campaign. All fully responsive with the choice of using a dark or light theme. The app is built using React, Zustand, Foundry, IPFS, Tailwind and coded in TypeScript.',
+      img: cryptoStarter,
+      link: 'https://crypto-starter-vite.vercel.app',
+      github: 'https://github.com/cryptnology/crypto-starter-vite',
+      demo: '24x1x96x_l4',
     },
   ],
   metadata: {
