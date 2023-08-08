@@ -231,6 +231,13 @@ const projectsPage = {
       github: 'https://github.com/cryptnology/lottery-smart-contract',
     },
     {
+      type: 'Project',
+      title: 'Decentralised Stable Coin',
+      img: foundryProject,
+      link: '',
+      github: 'https://github.com/cryptnology/stable-coin',
+    },
+    {
       type: 'Featured Project',
       title: 'CryptoStarter',
       summary:
