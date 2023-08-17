@@ -121,9 +121,9 @@ const aboutPage = {
     {
       position: 'Software Engineer',
       company: 'Serenade',
-      time: '2021-Present',
+      time: '2021-2023',
       address: 'Sydney, AU',
-      work: 'Worked on a team responsible for developing new features for artists to sell music NFTs to their fans. This included building the Next.js website, user interfaces, using all the update best code practices and testing.',
+      work: 'Worked on a team responsible for developing new features for artists to sell music NFTs to their fans. This included building the Next.js website, user interfaces, using all the up to date best code practices and testing.',
       companyLink: 'https://serenade.co',
     },
   ],
